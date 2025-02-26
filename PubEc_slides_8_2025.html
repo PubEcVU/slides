@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="PubEc_slides_8_2025_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PubEc_slides_8_2025_files/libs/quarto-html/tabby.min.js"></script>
+<script src="PubEc_slides_8_2025_files/libs/quarto-html/popper.min.js"></script>
+<script src="PubEc_slides_8_2025_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="PubEc_slides_8_2025_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PubEc_slides_8_2025_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="PubEc_slides_8_2025_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="PubEc_slides_8_2025_files/libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="PubEc_slides_8_2025_files/libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="PubEc_slides_8_2025_files/libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="PubEc_slides_8_2025_files/libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.40">
+
+  <meta name="author" content="Stefan Hochguertel">
+  <meta name="dcterms.date" content="2025-02-26">
+  <title>Public Economics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="PubEc_slides_8_2025_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="PubEc_slides_8_2025_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="PubEc_slides_8_2025_files/libs/revealjs/dist/theme/quarto-7cec2dca622b227f57edc44a776e74bc.css">
+  <link href="PubEc_slides_8_2025_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="PubEc_slides_8_2025_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="PubEc_slides_8_2025_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="PubEc_slides_8_2025_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/starlings.jpg" data-background-opacity="0.67" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Public Economics</h1>
+  <p class="subtitle">BSc Course</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Stefan Hochguertel 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:s.hochguertel@vu.nl">s.hochguertel@vu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Vrije Universiteit Amsterdam
+          </p>
+    </div>
+</div>
+
+  <p class="date">2025-02-26</p>
+</section>
+<section>
+<section id="optimality-and-heterogeneity" class="title-slide slide level1 center" data-background-color="#049baa" data-number="8">
+<h1><span class="header-section-number">8</span> Optimality and Heterogeneity</h1>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+<section id="second-best-optimal-taxation" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="8.1">
+<h2><span class="header-section-number">8.1</span> Second Best &amp; Optimal Taxation</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="second-best" class="slide level3">
+<h3>Second Best</h3>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Lump Sum</a></li><li><a href="#tabset-1-2"><span class="smallcaps">Okun</span>’s Leaky Bucket</a></li><li><a href="#tabset-1-3">Illustration</a></li><li><a href="#tabset-1-4">Implications</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<ul>
+<li>2nd theorem: ‘more equity’ (equality) involves lump-sum redistribution</li>
+<li>lump sum: form of taxation that is not tied to individual’s choices (e.g.: income, consumption, wealth), but only to the identity of the tax payer
+<ul>
+<li>tax payer cannot influence his tax bill</li>
+<li>unrealistic; closest example: <a href="https://en.wikipedia.org/wiki/Poll_tax_(Great_Britain)" target="_blank">UK Poll Tax</a> found <a href="https://en.wikipedia.org/wiki/Poll_tax_riots" target="_blank">little political support</a></li>
+<li>needs to be heterogeneous since goal is redistribution (some lose, some gain)</li>
+<li>needs to be based on private preference information</li>
+</ul></li>
+<li>reason: do not want substitution effects, as they lead to welfare losses</li>
+</ul>
+<div title="'First Theorem of Public Finance': There is no such thing as a lump-sum tax.">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>‘First Theorem of Public Finance’: There is no such thing as a lump-sum tax.</strong></p>
+</div>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>i.o.w.: all taxation is distortionary</li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<p>Consider a redistribution program that takes from the rich and gives to the poor.</p>
+<blockquote>
+<p><q> […] the money must be carried from the rich to the poor in a leaky bucket. Some of it will simply disappear in transit, so the poor will not receive all the money that is taken from the rich. […] I want you to decide how much leakage you would accept and still support [this plan]. Suppose 10 percent leaks out […] Should society still make the switch? If 50 percent leaks out? 75 percent? […] Where would you draw the line? Your answer cannot be right or wrong. […] Of course, the leak represents an inefficiency. The inefficiencies of real-world redistribution include the adverse effects on the economic incentives of the rich and the poor, and the administrative costs of tax-collection and transfer programs.<br> <span class="math inline">\(\qquad\qquad\qquad\qquad\qquad\)</span> <span class="smallcaps">Arthur M. Okun</span>, 1975, <br> <span class="math inline">\(\qquad\qquad\qquad\qquad\qquad\)</span> <em>Equality and Efficiency: The Big Tradeoff.</em></q></p>
+</blockquote>
+</div>
+<div id="tabset-1-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>efficiency losses shift the UPF inwards</li>
+<li>second best <span class="math inline">\(S\)</span>: maximize social welfare subject to the constraint that efficiency losses are unavoidable</li>
+<li>trade-off: equity <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\Rightarrow\)</span> redistribution <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\Rightarrow\)</span> taxes <span class="math inline">\(\uparrow\)</span> <span class="math inline">\(\Rightarrow\)</span> welfare costs <span class="math inline">\(\uparrow\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/2ndBest.png"></p>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-1-4">
+<p>Implications for the Cost of Public Activity</p>
+<ul>
+<li><p>if all taxation is distortionary, then public finance-relevant activities will be associated with the (social) welfare cost of raising taxes</p></li>
+<li><p>these <span class="alert">social cost of public funds</span> should be held as small as possible, but are unavoidable</p></li>
+<li><p>denote the marginal social cost of public funds by <span class="math inline">\(\lambda\)</span>, then we say that tax-financing a public project of $1 costs $1+<span class="math inline">\(\lambda\)</span> in terms of real economic resources</p>
+<ul>
+<li><span class="math inline">\(\lambda=0\)</span> first-best</li>
+<li><span class="math inline">\(\lambda&gt;0\)</span> second-best</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="inverse-elasticity-rule" class="slide level3">
+<h3>Inverse Elasticity Rule</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Idea</a></li><li><a href="#tabset-2-2">Solution</a></li><li><a href="#tabset-2-3">Example 1</a></li><li><a href="#tabset-2-4">(cont’d.)</a></li><li><a href="#tabset-2-5">Example 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<ul>
+<li>many markets &amp; economic activities <span class="math inline">\(\to\)</span> many possibilities to tax</li>
+<li>each tax leads to revenue and excess burdens</li>
+<li>if we add it all up, we get total tax revenue, and a total welfare loss of taxation</li>
+<li>the total revenue could be a <em>target value</em> of fiscal policy, a <strong>revenue requirement</strong> to finance public tasks</li>
+<li>but: we can choose each time how to tax, how much to tax and whom to tax</li>
+<li>all of this may have an impact on revenue and excess burdens in individual markets</li>
+<li>so: what’s the ‘optimal’ <strong>tax mix</strong> that
+<ul>
+<li>minimizes the total welfare loss</li>
+<li>while meeting the revenue requirement?</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-2-2">
+<div title="Inverse Elasticity Rule.">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Inverse Elasticity Rule.</strong></p>
+</div>
+<div class="callout-content">
+<p>The total welfare loss of taxation is being minimized when<br> tax rates are inversely proportional to the price elasticity of demand<br> (holding constant the price elasticity of supply).</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>a given tax revenue should be achieved using a tax-mix where commodities/activities with the lowest price elasticities are being taxed most</li>
+<li>smallest total <em>allocative</em> distortion</li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<ul>
+<li>2 commodity markets, 2 tax rates: <span class="math inline">\(\tau_1\)</span>, <span class="math inline">\(\tau_2\)</span></li>
+<li>deadweight losses: <span class="math inline">\(DWL_1(\tau_1)\)</span> and <span class="math inline">\(DWL_2(\tau_2)\)</span>; and tax revenues: <span class="math inline">\(T_1(\tau_1)\)</span>, <span class="math inline">\(T_2(\tau_2)\)</span></li>
+<li>goal: minimize total deadweight loss <span class="math inline">\(DWL_1+DWL_2\)</span><br> subject to total tax revenue <span class="math inline">\(T_1+T_2\)</span> being a constant <span class="math inline">\(R\)</span> (revenue constraint)</li>
+<li>tax rates are choice variables (policy parameters)</li>
+<li>technique: Lagrange (with multiplier <span class="math inline">\(\lambda\)</span>)</li>
+</ul>
+<p><span class="math display">\[\min_{\tau_1,\tau_2,\lambda}  {\cal L} = DWL_1(\tau_1)+DWL_2(\tau_2) + \lambda (R - T_1(\tau_1)-T_2(\tau_2))\]</span></p>
+<ul>
+<li>interpretation <span class="math inline">\(\lambda\)</span>: shadow price of tax revenue in terms of efficiency losses</li>
+</ul>
+</div>
+<div id="tabset-2-4">
+<p><span class="math display">\[\min_{\tau_1,\tau_2,\lambda}  {\cal L} = \overbrace{10\tau_1^2}^{DWL_1(\tau_1)}+\overbrace{15\tau_2^2}^{DWL_2(\tau_2)} + \lambda (\overbrace{4.9}^{R} - \overbrace{[8\tau_1-5\tau_1^2]}^{T_1(\tau_1)}-\overbrace{[10\tau_2-7.5\tau_2^2]}^{T_2(\tau_2)})\]</span></p>
+<p>FOCs<br> <span class="math display">\[\begin{aligned}
+\frac{\partial {\cal L} }{\partial \tau_1}  &amp;=&amp;20\tau_1-\lambda (8-10\tau_1)=0\\
+\frac{\partial {\cal L} }{\partial \tau_2}  &amp;=&amp;30\tau_2-\lambda (10-15\tau_2)=0\\
+\frac{\partial {\cal L} }{\partial \lambda} &amp;=&amp; 4.9-[8\tau_1-5\tau_1^2]-[10\tau_2-7.5\tau_2^2]=0
+\end{aligned}\]</span></p>
+<p>solution: <span class="math inline">\(\tau^\star_2=0.333\)</span> and <span class="math inline">\(\tau^\star_1=0.4\)</span></p>
+</div>
+<div id="tabset-2-5">
+<ul>
+<li><p>for <em>ad valorem</em> tax (`<span class="math inline">\(1+t_j\)</span>’), DWL can be written <span class="math display">\[DWL_j = \frac{1}{2} t_j^2 \cdot Q_{tj} p_{j}\cdot \eta_j^D,\quad j=1,2\]</span></p></li>
+<li><p>together with <span class="math inline">\(T_j = t_j \cdot Q_{tj} p_{j}\)</span>, get <span class="math display">\[\min_{t_1,t_2,\lambda}  {\cal L} = \frac{1}{2} t_1^2 \cdot Q_{t1} p_{1}\cdot \eta_1^D+\frac{1}{2} t_2^2 \cdot Q_{t2} p_{2}\cdot \eta_2^D + \lambda (R-t_1 \cdot Q_{t1} p_{1}-t_2 \cdot Q_{t2} p_{2})\]</span></p></li>
+<li><p>then the FOCs lead to <span class="math inline">\(t_1\eta^D_1=\lambda\)</span> and <span class="math inline">\(t_2\eta^D_2=\lambda\)</span></p></li>
+<li><p>from which follows <span class="math display">\[\frac{t_1}{t_2}=\frac{\eta^D_2}{\eta^D_1}.\]</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="further-aspects" class="slide level3">
+<h3>Further Aspects</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Critique</a></li><li><a href="#tabset-3-2">Equity</a></li><li><a href="#tabset-3-3">Social Welfare Weights</a></li><li><a href="#tabset-3-4"><span class="smallcaps">Ramsey</span> Rule</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<ul>
+<li>inverse elasticity rule suggests market-specific tax rates
+<ul>
+<li>heterogeneous taxation is second-best efficient</li>
+<li>based on <span class="smallcaps">Paretian</span> Welfare concept</li>
+</ul></li>
+<li>involves complicated, intransparent tax rate system when there are many goods</li>
+<li>high information and compliance cost for taxpayers</li>
+<li>simplifies: no direct link between markets, e.g.&nbsp;<span class="math inline">\(DWL_1(\tau_1)\neq DWL_1(\tau_1,\tau_2)\)</span></li>
+<li><span class="smallcaps">Paretian</span> Welfare does not take into account equity considerations
+<ul>
+<li>e.g., tax immobile tax payers, shift burden to those who will not substitute away</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-3-2">
+<ul>
+<li>maximize SWF, e.g., in two-consumer (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>) economy <span class="math display">\[W(u^A(q^A_1,q^A_2),u^B(q^B_1,q^B_2))\]</span> subject to the constraint that tax revenue must be collected from both consumers’ demand for all goods</li>
+<li>commodity demands are <span class="math inline">\(q^i_j, i=A,B; j=1,2\)</span></li>
+<li>explicit use of SWF allows trading off interest between consumers (equity)</li>
+</ul>
+</div>
+<div id="tabset-3-3">
+<ul>
+<li>maximization of SWF, <span class="math display">\[\max_{\tau_1,\tau_2} W(u^A(q^A_1(\tau_1),q^A_2(\tau_2)),u^B(q^B_1(\tau_1),q^B_2(\tau_2)))\]</span> will require assessing social welfare weights per individual; e.g.&nbsp;FOC for <span class="math inline">\(\tau_1\)</span> involve <span class="math display">\[\frac{\text{d} W}{\text{d}\tau_1} = \underbrace{\frac{\partial W}{\partial u^A} \cdot \frac{\partial u^A}{\partial q_1^A}}_{\equiv \omega^A_1}
+      \cdot \frac{\partial q_1^A}{\partial \tau_1}
+      + \frac{\partial W}{\partial u^B} \cdot \frac{\partial u^B}{\partial q_1^B}
+      \cdot \frac{\partial q_1^B}{\partial \tau_1}
+      \]</span></li>
+<li><span class="math inline">\(\omega^A_1\)</span> (and similarly, <span class="math inline">\(\omega^B_1\)</span>) is a social marginal welfare weight for <span class="math inline">\(A\)</span>; i.e., the value that society puts on providing an additional $ of consumption of good 1 to individual <span class="math inline">\(A\)</span></li>
+<li>note: it is customary to use marg.&nbsp;utility of income for <span class="math inline">\({\partial u^A}/{\partial q_j^A}\)</span></li>
+</ul>
+</div>
+<div id="tabset-3-4">
+<ul>
+<li>in more general setting, demand for all goods could depend on prices of all other goods</li>
+<li>hence, dependence on all tax rates in the system</li>
+<li>changing a single tax rate has implications through the change of relative prices for all markets</li>
+<li>without proof (see H&amp;M book for derivation:)</li>
+</ul>
+<div title="[Ramsey]{.smallcaps} Rule.">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="smallcaps">Ramsey</span> Rule.</strong></p>
+</div>
+<div class="callout-content">
+<p>Set optimal commodity tax rates such that <em>compensated demand</em> for each good is reduced in the same proportion relative to the before-tax position.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>recall: compensated demand nets out income effects (substitution effects matter for efficiency!)</li>
+<li>observe: simplest setting abstracts from equity considerations (demand system of a single consumer)</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="sin-taxes" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="8.2">
+<h2><span class="header-section-number">8.2</span> Sin Taxes</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="behavioral-aspects" class="slide level3">
+<h3>Behavioral Aspects</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Internalities</a></li><li><a href="#tabset-4-2">Psychology</a></li><li><a href="#tabset-4-3">Graph</a></li><li><a href="#tabset-4-4">Policy</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<ul>
+<li>internalities are ‘within-person externalities’ – effects of one’s own current behavior on one’s own future welfare, or welfare in a different state of nature</li>
+<li>mostly relevant in intertemporal contexts that view an individual at different points in time has having ‘different selves’
+<ul>
+<li>example: the present self may choose to smoke today, even though the future self may want the present self to quit today; this way, the present self causes a spillover effect on the future self (who is less likely to quit tomorrow)</li>
+</ul></li>
+<li>policy response can make current measures salient and refer to future consequences
+<ul>
+<li>example: very high cigarette taxes combined with shock-images</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-4-2">
+<ul>
+<li><p>economic psychologists emphasize a distinction of utilities</p>
+<ul>
+<li>decision utility</li>
+<li>experienced utility</li>
+</ul></li>
+<li><p>decision utility: the utility on which an individual takes actions and which results in observed choices</p></li>
+<li><p>experienced utility: the utility the individual uses to assess actual welfare of a choice made</p></li>
+<li><p>when decision and experience are separated in time, the difference can lead to</p>
+<ul>
+<li>making a choice now</li>
+<li>regretting it later</li>
+</ul></li>
+<li><p>under behavioral biases, the two may differ, and individuals may suffer a welfare loss that is similar to that of an externality</p></li>
+<li><p>note: neoclassical approach does not make that distinction of difference selves (time consistency)</p></li>
+<li><p>corollary: revealed preference paradigm – what you want shows in what you do</p></li>
+</ul>
+</div>
+<div id="tabset-4-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>in terms of welfare measurement under demand function</li>
+<li>blue: observed marginal private benefit: results from decision utility</li>
+<li>red: true marginal private benefit: results from experienced utility</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/mpbobserved.png"></p>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-4-4">
+<ul>
+<li>behavioral tendencies change the translation of externalities into welfare losses
+<ul>
+<li>they can mitigate or exarcerbate the problem by over-/understating relevant (marginal) costs and benefits</li>
+<li>depends on context</li>
+</ul></li>
+<li>behavioral tendencies can also generate externalities directly<br>
+</li>
+<li>internalities may compound the analytical complexity</li>
+<li>consumer heterogeneity big issue: problem of aggregation</li>
+<li>difficult to make clear-cut policy prescriptions</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="obesity-women" class="slide level3">
+<h3>Obesity Women</h3>
+<iframe src="https://ourworldindata.org/grapher/share-of-females-defined-as-obese" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+</iframe>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="health-taxes" class="slide level3">
+<h3>Health &amp; Taxes</h3>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Health</a></li><li><a href="#tabset-5-2">Taxes</a></li><li><a href="#tabset-5-3">Equity</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<ul>
+<li>sugar intake associated with severe health consequences</li>
+<li>type-2 diabetes, hypertension, cardiovascular diseases, and cancer, are leading causes of disability and death</li>
+<li>significant increase in health care costs, lost wages due to illnesses and disability, reduced work productivity, earlier retirement, etc.<br>
+</li>
+<li>increasing obesity prevalence is now a bigger problem in low- and middle-income countries than in high-income countries</li>
+<li>2015, 1/3 of global population overweight or obese, rapidly increasing prevalence</li>
+<li>prevalence of overweight or obesity:
+<ul>
+<li>global rise by 60% since 1990 for preschool-aged children</li>
+<li>example Mexico: above 40% in older children</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-5-2">
+<ul>
+<li>taxes change behavior</li>
+<li>specific commodity taxes: target specific commodities (e.g., diesel, gasoline), and constant per unit of the consumed good or substance (e.g., 80c/<span class="math inline">\(\ell\)</span>)</li>
+<li>also associated with goods of which gov’t wants to discourage consumption, hence the name ‘sin’ tax (e.g., alcohol, nicotine – aka demerit goods)</li>
+<li>recently: sugar tax, in response to secular rise in sugar consumption and causal links to adverse health behaviors and outcomes</li>
+<li>if those outcomes affect others (directly or indirectly, e.g., via inflated health insurance premiums), sin taxes are meant to correct externalities</li>
+<li>if those outcomes affect only the consumer (or a ‘future self’ of that person), sin taxes are meant to correct internalities</li>
+</ul>
+</div>
+<div id="tabset-5-3">
+<ul>
+<li>strong negative association between sugar-sweetened beverage (SSB) consumption and income</li>
+<li>tax incidence of SSB will fall predominantly on the poor</li>
+<li>however: some evidence that sin taxes work and reduce consumption</li>
+<li>policy issue: how to trade off the welfare gains from SSB taxation and the distributional consequences?</li>
+<li>aspect: both gains and burdens concentrated in similar demographics</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="sin-tax-with-full-pass-through" class="slide level3">
+<h3>Sin Tax with Full Pass-Through</h3>
+<h4 id="individual-consumer">Individual Consumer</h4>
+<p><video data-src="images/intern.mp4" controls=""><a href="images/intern.mp4">Video</a></video></p>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="further-considerations" class="slide level3">
+<h3>Further Considerations</h3>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Aggregation</a></li><li><a href="#tabset-6-2">Welfare Weights</a></li><li><a href="#tabset-6-3">Correlations</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<ul>
+<li>need to aggregate from individual consumer to market level</li>
+<li>aggregation of externalities across consumers: weigh with difference between marginal welfare weight <span class="math inline">\(\omega\)</span> and value of public funds <span class="math inline">\(\lambda\)</span> (since sin tax reduces public revenue distortion: e.g., less sugar consumption – better health – lower public health cost)</li>
+<li>aggregation of internalities across consumers: weigh with marginal welfare weight <span class="math inline">\(\omega\)</span> (disregard public funds, as no effect on, e.g., public health cost)</li>
+</ul>
+</div>
+<div id="tabset-6-2">
+<p>social marginal welfare weights <span class="math inline">\(\omega\)</span></p>
+<ul>
+<li>inequality concern: the poor may have higher weights in a social welfare function<br>
+</li>
+<li>incidence: if the poor also consume more sugar, the sin tax falls disproportionately on them<br>
+</li>
+<li>if internalities are important, they may at the same time benefit disproportionately</li>
+</ul>
+</div>
+<div id="tabset-6-3">
+<ul>
+<li>externalities: correlation between individual demand elasticity and individual’s contribution to externality
+<ul>
+<li>possibly positive: consumers <br> generating the largest externalities are most responsive to the tax
+<ul>
+<li>then, externality benefits of sugar tax are larger</li>
+</ul></li>
+</ul></li>
+<li>internalities: negative correlation sugar consumption and income:
+<ul>
+<li>tax burden regressive
+<ul>
+<li>but: internality benefits of sugar tax likely progressive</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="aspects-for-optimal-tax-policy-in-practice" class="slide level3">
+<h3>Aspects for Optimal Tax Policy In Practice</h3>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Welfare</a></li><li><a href="#tabset-7-2">Policy</a></li><li><a href="#tabset-7-3">Empirics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<p>welfare assessment and optimal taxation depend on</p>
+<ul>
+<li>whether externalities are present</li>
+<li>whether internalities are present</li>
+<li>who pays the taxes and who benefits or is harmed by ex/internalities</li>
+<li>demand (and supply) elasticities / pass-through</li>
+<li>preference heterogeneity across the income distribution</li>
+<li>complementarity/substitutability with untaxed, sugar-based consumption goods</li>
+<li>leakage effects (e.g., cross-border shopping)</li>
+</ul>
+</div>
+<div id="tabset-7-2">
+<ul>
+<li><p>optimality suggests: highly complex tax system</p></li>
+<li><p>issue: conflicts with principles of good taxation</p>
+<ul>
+<li>transparency</li>
+<li>simplicity</li>
+<li>universality</li>
+<li>neutrality</li>
+</ul></li>
+<li><p>to keep it simple (manageable):</p>
+<ul>
+<li>tax (physical) sugar content</li>
+<li>apply to broad tax base (not just drinks, not just locally)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-7-3">
+<ul>
+<li>determining the size of demand elasticities, as well as the extent of internalities, externalities and regressivity is
+<ul>
+<li>very complicated<br>
+</li>
+<li>requires very detailed microeconomic data</li>
+<li>suitable empirical approaches</li>
+</ul></li>
+<li>authors of the study come up with a rough advice of 1.5 cents per ounce (5.4 c/100 g)</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+
+<section id="conclusions-and-summary" class="title-slide slide level2 unnumbered center" data-background-color="#acfaf7">
+<h2>Conclusions and Summary</h2>
+
+</section>
+<section id="summary" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>Lump-sum taxes and transfers, as required by the Second Theorem do not exist, hence distortionary taxation allows at most second best social choice (efficiency-equity tradeoff)</li>
+<li>good tax policy-making is in general complex, but also needs transparency</li>
+<li>elasticities can be used to guide the choice which activities to tax most</li>
+<li>yet, equity considerations may suggest that the income position of households should be taken into account</li>
+<li>taxes can be used in addition to protect consumers from themselves, but normative judgment involved (do policy makers think that consumers are not acting in their own best interest)?</li>
+</ul>
+
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
+</section>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/VUnobg.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>BSc Course • Public Economics • © 2024-25 Stefan Hochguertel</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="PubEc_slides_8_2025_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+              // default icon
+              link.classList.add("external");
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
