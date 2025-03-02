@@ -1,0 +1,15 @@
+---
+# PUBLIC ECONOMICS
+#
+# LECTURE no. 9 : Income Tax
+date: Mar 3, 2025
+number-offset: 8
+format:
+  revealjs:
+    width: 90%
+    height: 800
+---
+
+{{< include _ppe_slides_lec9.qmd >}}
+
+
