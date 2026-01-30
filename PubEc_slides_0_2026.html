@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/mathjax3tags/mathjax3.js"></script>
+<script src="site_libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.21">
+
+  <meta name="author" content="Stefan Hochguertel">
+  <title>Microeconomics Review</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-024771c6d174ed544a608708b7da6505.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-opacity="0.0" class="quarto-title-block center">
+  <h1 class="title">Microeconomics Review</h1>
+  <p class="subtitle">Public Economics</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Stefan Hochguertel 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:s.hochguertel@vu.nl">s.hochguertel@vu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Vrije Universiteit Amsterdam
+          </p>
+    </div>
+</div>
+
+  <p class="date">Thursday, January 15, 2026</p>
+</section>
+<section id="slide-deck" class="slide level3">
+<h3>Slide Deck</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">How to Use</a></li><li><a href="#tabset-2-2">Desmos Graphs</a></li><li><a href="#tabset-2-3">Notes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<h5 id="navigation">Navigation</h5>
+<ul>
+<li>keyboard shortcuts
+<ul>
+<li>arrows / PageUp/Down: next/back, etc.</li>
+<li>G - go to slide #</li>
+<li>F - full screen mode</li>
+<li>O - toggle overview</li>
+<li>R - scroll mode</li>
+<li>[esc] leave special screen mode</li>
+</ul></li>
+<li>more at
+<ul>
+<li>menu button (<span class="math inline">\(\equiv\)</span>) in lower left corner</li>
+<li>Quarto <a href="https://quarto.org/docs/presentations/revealjs/presenting.html" target="_blank">Presentation</a> page</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<h5 id="tabs">Tabs</h5>
+<ul>
+<li>note that many of our slides have tabs (subslides)</li>
+<li>click on them to reveal more content</li>
+</ul>
+<div class="panel-tabset" style="text-align: center">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Tab 1</a></li><li><a href="#tabset-1-2">Tab 2</a></li><li><a href="#tabset-1-3">Tab 3</a></li></ul>
+<div class="tab-content" style="text-align: center">
+<div id="tabset-1-1">
+<p>hi there</p>
+</div>
+<div id="tabset-1-2">
+<p>hello world</p>
+</div>
+<div id="tabset-1-3">
+<p>Easter Egg</p>
+</div>
+</div>
+</div>
+<h5 id="viewing">Viewing</h5>
+<ul>
+<li>intended for screen use
+<ul>
+<li>do not download, will look ugly</li>
+<li>pdf conversion may not work properly</li>
+</ul></li>
+<li>and yes, you need a working internet connection, so don’t hole up offline</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-2">
+<ul>
+<li>slides embed graphs made with the <a href="https://desmos.com" target="_blank">desmos.com</a> graphing calculator</li>
+<li>Desmos design is very intuitive, almost no further instructions are needed, curiosity gets you a long way</li>
+<li>to learn more about how the calculator works and renders functions and other objects consult the Desmos <a href="https://help.desmos.com/hc/en-us/articles/4406040715149-Getting-Started-Desmos-Graphing-Calculator" target="_blank">Getting Started</a> page</li>
+</ul>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<p><strong>here is a Desmos example graph</strong></p><div class="column" style="width:35%;">
+<iframe src="https://edu.nl/jkmmy" width="500" height="425" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:65%;">
+<div title="Movable Points, Sliders and Toggles">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Movable Points, Sliders and Toggles</strong></p>
+</div>
+<div class="callout-content">
+<p>We offer a way to easily manipulate graphs, either directly on the graph when clicking a ‘movable point’ (a visibly large dot), or by way of using parameter sliders and toggles (click on the text, typically it says ‘toggle’).</p>
+</div>
+</div>
+</div>
+</div>
+<div title="Edit Graph">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Edit Graph</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>By clicking on “edit graph on desmos” in the lower-right corner of the graph, you can edit the equation and hence explore how the shape of the mathematical function behaves when the underlying equation is changed, or how rendering (colors, line thickness, axes numbers and labels, etc.) can be altered.</li>
+<li>Some details of the code may be unavailable to you.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<h5 id="technicalities">Technicalities</h5>
+<ul>
+<li>html format choice required by embedding animated <img data-src="images/desmos.png" width="100"> graphs</li>
+<li>created with <img data-src="images/quarto.png" width="100"> using <img data-src="images/revealjs.png" width="100"></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h5 id="copyright">Copyright</h5>
+<p>© Stefan Hochguertel, 2024-25, all rights reserved</p>
+<ul>
+<li>notify the author of issues (typos, errors, omissions, inconsistencies)</li>
+<li>license: <img data-src="images/Cc-by-nc-sa.png" width="100"></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+</section>
+<section>
+<section id="microeconomics-review" class="title-slide slide level1 center" data-background-color="#049baa" data-number="0">
+<h1><span class="header-section-number">0</span> Microeconomics Review</h1>
+<div style="display:none"><span class="math inline">\(\nextSection\)</span></div>
+<!-- ** NEW SECTION ******************************************************* -->
+</section>
+<section id="overview" class="title-slide slide level2 unnumbered center" data-background-color="#acfaf7">
+<h2>Overview</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="intro" class="slide level3">
+<h3>Intro</h3>
+<ul>
+<li>what follows are some slides covering important foundational concepts in microeconomics that we need for our Public Economics course</li>
+<li>this is meant as a refresher: things unknown should be looked up in a suitable micro book such as
+<ul>
+<li>Varian, Intermediate Microec.</li>
+<li>Goolsbee Levitt Syverson, Microec.</li>
+<li>Nechyba, Microec. Intuitve Approach</li>
+<li>Nicholson Snyder, Microec. Theory</li>
+</ul></li>
+</ul>
+<h4 id="content">Content</h4>
+<ol type="1">
+<li>Single consumer’s utility maximization and individual demand</li>
+<li>Aggregation across consumers to market demand</li>
+<li>Single competitive firm’s production and cost</li>
+<li>Market supply and equilibrium</li>
+<li>Noncooperative games: strategic interaction of players</li>
+<li>Monopoly and duopoly</li>
+</ol>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="helicopter-view-of-competitive-markets" class="slide level3">
+<h3>Helicopter View of Competitive Markets</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<p><img data-src="images/competitive_overview.png" style="width:65.0%"></p>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="single-consumer" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.1">
+<h2><span class="header-section-number">0.1</span> Single Consumer</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="consumer-preferences" class="slide level3">
+<h3>Consumer Preferences</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Consumption Bundles</a></li><li><a href="#tabset-3-2">Axioms of Choice</a></li><li><a href="#tabset-3-3">Indifference Curve</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/dx8hw" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>a consumption bundle is a combination of quantities of two goods and corresponds to a point with coordinates <span class="math inline">\((x,y)\)</span> in the graph</li>
+<li>how does a consumer choose among two such bundles?
+<ul>
+<li>preferences</li>
+<li>prediction</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-3-2">
+<div title="Preference Assumptions">
+<div class="callout callout-caution no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Preference Assumptions</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Completeness</li>
+<li>Transitivity
+<ul>
+<li>imply individual rationality</li>
+</ul></li>
+<li>Monotonicity</li>
+<li>Convexity</li>
+<li>Continuity
+<ul>
+<li>imply mathematical convenience</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/7vn7g" width="600" height="600" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Indifference curves (ICs) are fundamental objects in the economic theory of choice</li>
+<li>Under the made assumptions, ICs
+<ul>
+<li>are (weakly) bowed to the origin</li>
+<li>cannot cross each other</li>
+<li>do not bend back and are not (semi-)circular</li>
+</ul></li>
+<li>picture illustrates convexity: bundle F (50:50 mixture of bundles “2” and “4”) is preferred to “2”, “4” (and “3”)<br>
+</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="utility-function-and-indifference-curves" class="slide level3">
+<h3>Utility Function and Indifference Curves</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Utility Function</a></li><li><a href="#tabset-4-2">Ind’ Curve Maps</a></li><li><a href="#tabset-4-3">Ordinality and Incomparability</a></li><li><a href="#tabset-4-4">… Graphs</a></li><li><a href="#tabset-4-5">Notes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>a <strong>utility function</strong> is a mathematical model for consumer preferences</li>
+<li>with two goods, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, we write <span class="math display">\[u(x,y)\]</span></li>
+<li>this is a three-dimensional object (two inputs, one output)</li>
+<li>we specify <span class="math inline">\(u()\)</span> for convenience, e.g.&nbsp;<span class="math display">\[u = x + y \qquad \text{or} \qquad u = x \cdot y\]</span> are easy to handle using algebra or calculus</li>
+</ul>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<ul>
+<li>two popular specifications (sporting a couple of parameters) that every econ student needs to know are
+<ul>
+<li><strong>Cobb Douglas</strong> <span class="math display">\[f(x,y)=x^{\alpha}\cdot y^{\left(1-\alpha\right)}\]</span></li>
+<li><strong>Constant Elasticity of Substitution (CES)</strong> <span class="math display">\[f(x,y)=\left(ax^{\frac{s-1}{s}}+\left(1-a\right)y^{\frac{s-1}{s}}\right)^{\frac{s}{s-1}}\]</span></li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-4-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>ICs are the 2D level curves of the 3D function <span class="math inline">\(u(x,y)\)</span></li>
+<li>they can be obtained by horizontally ‘slicing’ the 3D function, keeping contant a vertical level of <span class="math inline">\(u\)</span></li>
+<li>at any chosen level of <span class="math inline">\(u\)</span>, there is one indifference curve (IC)</li>
+<li>slicing (infinitely) many times, gives (infinitely) many ICs (IC map)</li>
+<li>for intuition, play with the 3D widget on the right</li>
+<li>click on “&gt; Utility” to change the functional form, e.g.&nbsp;try <span class="math inline">\(f\left(x,y\right)=\sqrt{x}+\sqrt{y}\)</span></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<iframe src="https://edu.nl/7rfdb" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-4-3">
+<ul>
+<li>the level of utility has no intrinsic meaning, except a higher number indicates a higher level of satisfaction or valuation: <em>more is better</em></li>
+<li>this is an <strong>ordinal</strong> concept (order or ranking matters, not degree)</li>
+<li>from a utility number, we cannot say anything about the absolute satisfaction or valuation</li>
+<li>also, we <strong>cannot compare</strong> utilities between individuals
+<ul>
+<li>two consumers could use different scales to measure their utility</li>
+</ul></li>
+<li>the following graphs illustrate:
+<ul>
+<li>ordinality: the shape of indifference curves are unaffected when the scale parameter <span class="math inline">\(s\)</span> is shifted</li>
+<li>substitution: shifting the location <span class="math inline">\(a\)</span> of the point performs a movement along a level curve</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-4-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<h5 id="ordinality-illustrated">Ordinality Illustrated</h5>
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/d8pnh" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<h5 id="substitution-illustrated">Substitution Illustrated</h5>
+<iframe src="https://edu.nl/hxb3k" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-4-5">
+<ul>
+<li>utility functions and indifference curves contain the same information, but <span class="math inline">\(u()\)</span> is efficient mathematical notation, hence convenient</li>
+<li>ordinality and incomparability will be dropped when we analyze economic inequality and social choice</li>
+<li>preferences (utility functions, indifference curves) are assumed to be stable between choice situations that we compare
+<ul>
+<li>indifference curves <strong>never move</strong> in our models</li>
+<li>often enough, <strong>different</strong> indifference curves (different utility levels) will be chosen when circumstances change</li>
+</ul></li>
+<li>utility focuses on the valuation of measurable quantities (consumption bundles)
+<ul>
+<li>utility <span class="math inline">\(\nRightarrow\)</span> happiness</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="sec-CDCESIC" class="slide level3">
+<h3>Specific Indifference Curve Maps</h3>
+<p>For math modeling, we need to be specific. Two popular types of preferences:</p>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="cobb-douglas">Cobb Douglas</h4>
+<p><span class="math display">\[f(x,y)=x^{\alpha}\cdot y^{\left(1-\alpha\right)}\]</span></p>
+</div><div class="column" style="width:50%;">
+<h4 id="constant-elasticity-of-substitution-ces">Constant Elasticity of Substitution (CES)</h4>
+<p><span class="math display">\[f(x,y)=\left(ax^{\frac{s-1}{s}}+\left(1-a\right)y^{\frac{s-1}{s}}\right)^{\frac{s}{s-1}}\]</span></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/48qex" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<iframe src="https://edu.nl/d9nh3" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="marginal-rate-of-substitution-mrs" class="slide level3">
+<h3>Marginal Rate of Substitution (MRS)</h3>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Graph</a></li><li><a href="#tabset-5-2">Underlying Math</a></li><li><a href="#tabset-5-3">Math Examples</a></li><li><a href="#tabset-5-4">Notes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/mkhyw" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>MRS is a <strong>fundamental</strong> concept to characterize consumer choice</li>
+</ul>
+<div title="MRS">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>MRS</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>tells how much a consumer is willing to give up in terms of units of <span class="math inline">\(y\)</span> in return for getting an (infinitesimally small) unit of <span class="math inline">\(x\)</span></li>
+<li>hence, measures willingness to give up, or willingness to pay</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>MRS (a positive number) equals (the negative of) the slope of the indifference curve</li>
+</ul>
+</div></div>
+</div>
+<div id="tabset-5-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>how does the <span class="math inline">\(u\)</span>-value of <span class="math inline">\(u(x,y)\)</span> change <strong>along</strong> an IC when we vary <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>?</p></li>
+<li><p>the answer is: along an IC the change in <span class="math inline">\(u\)</span>, <span class="math inline">\(\text d u\)</span>, will be zero</p></li>
+<li><p>using the formula for a <strong>total differential</strong> we can decompose this ‘zero change’ into changes due to either <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>: <span class="math display">\[
+\text{d}u = \frac{\partial u}{\partial x} \text{d}x +  \frac{\partial u}{\partial y} \text{d}y =0
+\]</span></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>rearrangement (using simple algebra) leads to <span class="math display">\[
+\frac{\text{d}y}{\text{d}x} =  -\color{blue}{\frac{{\partial u}/{\partial x}}{{\partial u}/{\partial y}}}
+\]</span></p></li>
+<li><p>the slope of the IC, <span class="math inline">\({\text{d}y}/{\text{d}x}\)</span>, equals the negative of the <span style="color:blue;">MRS</span></p></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-5-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math inline">\(u(x,y) = \ln(x)+\ln(y)\)</span>: <span class="math display">\[MRS = \frac{\frac{1}{x}}{\frac{1}{y}}=\frac{y}{x},\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math inline">\(u(x,y) = \sqrt{x} \cdot \sqrt{y}\)</span>: <span class="math display">\[MRS = \frac{\frac{\sqrt{y}}{2\sqrt{x}}}{\frac{\sqrt{x}}{2\sqrt{y}}}=\frac{y}{x}.\]</span></p>
+</div></div>
+<!-- END multicolumn setup ................................................. -->
+</div>
+<div id="tabset-5-4">
+<ul>
+<li>MRS is a local concept: along a given IC, MRS typically changes with <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>
+<ul>
+<li><div title="Get the hang of the MRS">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Get the hang of the MRS</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>move the dot in the graph to see how the MRS number changes</li>
+<li>verify the shown MRS number by measuring the slope <span class="math inline">\({\text{d}y}/{\text{d}x}\)</span> at the green dot</li>
+</ul>
+</div>
+</div>
+</div>
+</div></li>
+<li>there are exceptions (which ones?) <em>Hint:</em> play with the <a href="#/sec-CDCESIC">IC maps</a></li>
+</ul></li>
+<li>different utility functions can have the same MRS (see tab Math Examples)
+<ul>
+<li>this is because different utility functions may differ in the 3rd but not in the other dimensions (ordinal concept)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="budget-constraint-bc" class="slide level3">
+<h3>Budget Constraint (BC)</h3>
+<ul>
+<li><p>consumers have a fixed income <span class="math inline">\(m\)</span> and they face prices <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span></p></li>
+<li><p>we call <span class="math inline">\(\qquad p_x\cdot x+p_y\cdot y\qquad\)</span> <em>expenditure</em></p></li>
+<li><p>expenditure cannot exceed income <span class="math inline">\(p_x\cdot x+p_y\cdot y\le m\)</span></p></li>
+<li><p>under ‘more-is-better’ consumers spend it all: choose points <span class="math inline">\((y,x)\)</span> on <em>budget constraint</em> <span class="math display">\[y = \frac{m}{p_y}-\frac{p_x}{p_y}\cdot x\]</span></p></li>
+<li><p>then maximize utility <em>subject to</em> the BC</p></li>
+<li><p>in graph:</p>
+<ul>
+<li>intersection points of BC with axes are <span class="math inline">\(\frac{m}{p_x}\)</span> and <span class="math inline">\(\frac{m}{p_y}\)</span></li>
+<li>slope is <span class="math inline">\(\displaystyle -\frac{p_x}{p_y}\)</span></li>
+</ul></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="two-intuitive-ways-to-maximize-utility" class="slide level3">
+<h3>Two Intuitive Ways to Maximize Utility</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="substitute-out-y-using-bc">Substitute Out <span class="math inline">\(y\)</span> using BC</h4>
+ <iframe src="https://edu.nl/kxajn" width="450" height="450" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<h4 id="via-mrs-slope-of-bc">Via MRS = Slope of BC</h4>
+<iframe src="https://edu.nl/3k8gp" width="450" height="450" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<div title="Note">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>left panel shows the intersection of BC (<span class="math inline">\(m=p_x\cdot x+p_y\cdot y\)</span>) and <span class="math inline">\(u(x,y)\)</span> and has <span class="math inline">\(u\)</span> and <span class="math inline">\(x\)</span> on the axes</li>
+<li>right panel shows condition <span class="math inline">\(MU_x/p_x = MU_y/p_y\)</span> (last dollar spent on <span class="math inline">\(x\)</span> increases utility to the same extent as spending it on <span class="math inline">\(y\)</span>)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="two-intuitive-ways-to-maximize-utility-1" class="slide level3">
+<h3>Two Intuitive Ways to Maximize Utility</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="substitute-out-y-using-bc-1">Substitute Out <span class="math inline">\(y\)</span> using BC</h4>
+<ul>
+<li>we have 3 variables: <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(u\)</span></li>
+<li>first get rid of one of them, for instance <span class="math inline">\(y\)</span></li>
+<li>we use the budget constraint <span class="math display">\[\quad\underbrace{\color{red}{y}=\frac{m}{p_y}-\frac{p_x}{p_y}\cdot x}_{\color{red}{\downarrow}}\]</span></li>
+<li>and substitute into <span class="math inline">\(u(x,\color{red}{y})\)</span></li>
+<li>then, we do simple maximization: <span class="math inline">\(\max_x u(x)\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h4 id="via-mrs-slope-of-bc-1">Via MRS = Slope of BC</h4>
+<ul>
+<li>we use the marginal condition for maximization <span class="math display">\[\frac{MU_x(x,y)}{p_x} = \frac{MU_y(x,y)}{p_y} \quad \text{or} \quad MRS(x,y)=\frac{p_x}{p_y}\]</span></li>
+<li>since there are (infinitely) many pairs of <span class="math inline">\((x,y)\)</span> where this holds, we still need to combine with budget constraint <span class="math display">\[\underbrace{\color{red}{y}=\frac{m}{p_y}-\frac{p_x}{p_y}\cdot x}_{\color{red}{\downarrow}}\]</span></li>
+<li>and substitute into <span class="math inline">\(MRS(x,\color{red}{y})\)</span></li>
+<li>then, we use algebra to solve for <span class="math inline">\(x\)</span></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<p>Which one’s easier? Depends on functional form.</p>
+</section>
+<section id="constrained-maximization-lagrange-approach" class="slide level3">
+<h3>Constrained Maximization: Lagrange Approach</h3>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Utility Maximization</a></li><li><a href="#tabset-6-2">Interpretation</a></li><li><a href="#tabset-6-3">Math Video<span class="math inline">\(^\star\)</span></a></li><li><a href="#tabset-6-4">Note</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>to use the Lagrange approach for constrained optimization, first, set up the Lagrange function with <span class="math inline">\(\lambda\)</span> as multiplier</li>
+</ul>
+<p><span class="math display">\[ {\cal L}(x,y,\lambda) = u(x,y) - \lambda \cdot (p_x \cdot x + p_y \cdot y-m) \]</span></p>
+<ul>
+<li>then, set first derivatives w.r.t. <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(\lambda\)</span> equal to zero (first order conditions, FOCs)</li>
+</ul>
+<p><span class="math display">\[\begin{eqnarray*}
+\frac{\partial {\cal L} }{\partial x}       =\;\; \frac{\partial u(x,y)}{\partial x} - \lambda \cdot p_x &amp;=&amp; 0 \\
+\frac{\partial {\cal L} }{\partial y}       =\;\; \frac{\partial u(x,y)}{\partial y} - \lambda \cdot p_y &amp;=&amp; 0 \\
+\frac{\partial {\cal L} }{\partial \lambda} = m- p_x \cdot x - p_y \cdot y &amp;=&amp; 0
+\end{eqnarray*}\]</span></p>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<ul>
+<li>rewrite the first couple of equations and divide one by the other to eliminate <span class="math inline">\(\lambda\)</span></li>
+</ul>
+<p><span class="math display">\[\left.  \begin{array}{ccc}
+\frac{\partial u(x,y)}{\partial x} &amp;=&amp; \lambda \cdot p_x \\
+\frac{\partial u(x,y)}{\partial y} &amp;=&amp; \lambda \cdot p_y \end{array} \right\} \to \frac{\frac{\partial u(x,y)}{\partial x}}{\frac{\partial u(x,y)}{\partial y}} = \frac{p_x}{p_y}
+\]</span></p>
+<ul>
+<li>and realize that this is just the MRS equal to relative price condition (‘equal slopes’)</li>
+<li>combine with the third FOC as before to solve for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span></li>
+</ul>
+<div title="Exercise">
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Exercise</strong></p>
+</div>
+<div class="callout-content">
+<p>Solve the Cobb Douglas case using Lagrange and find the optimal value of <span class="math inline">\(\lambda^\star\)</span></p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END of multicolumn setup ................................................ -->
+</div>
+<div id="tabset-6-2">
+<ul>
+<li>once solved, the optimal quantities <span class="math inline">\(x^\star\)</span> and <span class="math inline">\(y^\star\)</span> are functions of the parameters <span class="math inline">\((p_x,p_y,m)\)</span> of the problem, and hence evaluating utility at that optimum gives a function <span class="math display">\[u(x^\star, y^\star)=v(p_x,p_y,m)\]</span></li>
+<li><span class="math inline">\(v()\)</span> is known in economics as <strong>indirect utility</strong> function, mathematically, it is a <strong>value function</strong></li>
+<li>in turn, from any of the first two FOCs, the optimal value of <span class="math inline">\(\lambda\)</span> can be obtained as <span class="math inline">\(\displaystyle \lambda^\star =\left. \frac{\partial u(x^\star, y^\star)}{\partial x}\right/ p_x\)</span></li>
+<li><span class="math inline">\(\lambda^\star()\)</span> is therefore also a function of the parameters</li>
+<li>of particular interest is the dependence of <span class="math inline">\(v()\)</span> and <span class="math inline">\(\lambda^\star()\)</span> on <span class="math inline">\(m\)</span>; the derivative <span class="math inline">\(\displaystyle \frac{\text{d}v(m)}{\text{d}m}\)</span> tells how the maximally attainable level of utility changes (increases) if we marginally change (relax) the constraint (give the consumer one dollar more)</li>
+<li>this turns out to be <span class="math inline">\(\displaystyle \frac{\text{d}v(m)}{\text{d}m} = \lambda^\star(m)\)</span></li>
+<li>so, <span class="math inline">\(\lambda\)</span> can be interpreted as the <strong>shadow value</strong> or <strong>shadow price</strong> of the constraint</li>
+</ul>
+</div>
+<div id="tabset-6-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Advanced math video clearly showing the intuition for optimizing a parabolic function <span class="math inline">\(f(x,y)\)</span> subject to an elliptical constraint <span class="math inline">\(g(x,y)=k\)</span> and making clear how the Lagrange method works.</p>
+<p>The clue is that (vector-valued) derivatives of <span class="math inline">\(f(x,y)\)</span> and <span class="math inline">\(g(x,y)\)</span> are parallel in the optimum, and <span class="math inline">\(\lambda\)</span> is used as weight to make them equal. Parallel derivatives imply ‘equal slopes’.</p>
+<p>In our application,</p>
+<p><span class="math inline">\(f(x,y) = u(x,y)\)</span>, <span class="math inline">\(\quad g(x,y)=p_x \cdot x + p_y \cdot y\quad\)</span>, <span class="math inline">\(k=m\)</span></p>
+<p><span class="math display">\[
+\left.
+\begin{array}{ccc}
+\nabla f(x,y) &amp;=&amp; \left(\begin{array}{c} \frac{\partial u(x,y)}{\partial x} \\ \frac{\partial u(x,y)}{\partial y} \end{array}\right) \\
+\nabla g(x,y) &amp;=&amp; \left(\begin{array}{c} p_x \\ p_y \end{array}\right)
+\end{array}
+\right\} \stackrel{FOC}{\Rightarrow}  
+\begin{array}{ccc}
+\nabla f(x,y) &amp;=&amp; \lambda \cdot \nabla g(x,y)\\
+m&amp;=&amp;g(x,y)
+\end{array}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5A39Ht9Wcu0?si=mRGGKCiQGPwoL0PC&amp;start=180" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</div></div>
+<!-- END of multicolumn setup ................................................ -->
+</div>
+<div id="tabset-6-4">
+<ul>
+<li>the Lagrange approach is quite general and can be extended to any number of <span class="math inline">\(n\)</span> variables and <span class="math inline">\(k\)</span> constraints</li>
+<li>it equally works for minimization</li>
+<li>it can be extended to incorporate inequality constraints (Kuhn Tucker)</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="deriving-demand" class="slide level3">
+<h3>Deriving Demand</h3>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Graphical Derivation</a></li><li><a href="#tabset-7-2">Graph</a></li><li><a href="#tabset-7-3">Notes</a></li><li><a href="#tabset-7-4">Math Derivation, I</a></li><li><a href="#tabset-7-5">Math Derivation, II</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<ul>
+<li>the demand function derives from the consumer’s optimal choice of <span class="math inline">\(x\)</span></li>
+<li>it hence relates quantity demanded <span class="math inline">\(x\)</span> to the price <span class="math inline">\(p_x\)</span> of the good, <span class="math inline">\(x = D(p_x)\)</span></li>
+<li>the previous picture showed how to obtain the optimal <span class="math inline">\(x\)</span> for one particular price</li>
+<li>we now need to vary <span class="math inline">\(p_x\)</span> and plot <span class="math inline">\(x\)</span> against all possible <span class="math inline">\(p_x\)</span></li>
+</ul>
+</div>
+<div id="tabset-7-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/6knwu" width="650" height="450" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<div title="Demand Diagram">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Demand Diagram</strong></p>
+</div>
+<div class="callout-content">
+<p>Recall that economists write <span class="math inline">\(x = D(p_x)\)</span> while putting <span class="math inline">\(p_x\)</span> on the vertical and <span class="math inline">\(x\)</span> on the horizontal axis.</p>
+</div>
+</div>
+</div>
+</div>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<p>Use the movable dot to change the price of <span class="math inline">\(x\)</span> and see demand for <span class="math inline">\(x\)</span> adjust through reoptimization.</p>
+</div>
+</div>
+</div>
+</div>
+<div title="Straight Line Demand">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Straight Line Demand</strong></p>
+</div>
+<div class="callout-content">
+<p>For <strong>simplicity and convenience</strong> only, demand functions are often depicted as/approximated by straight lines.</p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-7-3">
+<ul>
+<li>In a two-goods model, it is more accurate to write <span class="math display">\[
+\begin{split}
+x &amp;= D_x(p_x,p_y,m) \\
+y &amp;= D_y(p_x,p_y,m) \\
+\end{split}
+\]</span> making clear that all quantities can depend on all prices and incomes</li>
+<li>for the square-root Cobb Douglas utility, it is easy to show that <span class="math display">\[
+\begin{split}
+D_x(p_x,p_y,m) &amp;= m/(2p_x)\\
+D_y(p_x,p_y,m) &amp;= m/(2p_y)
+\end{split}
+\]</span> i.e., demands do not depend directly on the price of the other good.</li>
+</ul>
+</div>
+<div id="tabset-7-4">
+<ul>
+<li>for the parameterized Cobb Douglas utility <span class="math inline">\(u(x,y)=x^{\alpha} \cdot y^{1-\alpha}\)</span> start with <span class="math inline">\(MRS=p_x/p_y\)</span> and then incorporate <span class="math inline">\(y=m/p_y-x\cdot p_x/p_y\)</span> from the BC</li>
+<li>marginal utility of <span class="math inline">\(x\)</span> is <span class="math inline">\(\displaystyle \qquad\frac{\partial u}{\partial x} = \alpha\cdot x^{\alpha-1} \cdot y^{1-\alpha} = \alpha\cdot x^{\alpha} \cdot \frac{1}{x} \cdot y^{1-\alpha} = \frac{\alpha}{x} u(x,y)\)</span></li>
+<li>analogously, <span class="math inline">\({\partial u}/{\partial y}= {(1-\alpha) u(x,y)}/{y}\)</span> so that <span class="math display">\[MRS = \frac{{\partial u}/{\partial x}}{{\partial u}/{\partial y}} = \frac{\alpha y}{(1-\alpha)x} = \frac{p_x}{p_y}\]</span></li>
+<li>rearrange, and substitute <span class="math inline">\(y\)</span> from the BC to find <span class="math inline">\(\displaystyle \qquad\frac{m}{p_y}-\frac{x\cdot p_x}{p_y} = \frac{(1-\alpha)p_x x}{\alpha p_y}\)</span></li>
+</ul>
+</div>
+<div id="tabset-7-5">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>rearrange <span class="math display">\[m/p_y = \left(\frac{(1-\alpha)p_x}{\alpha p_y} + \frac{p_x}{p_y}\right)x\]</span> multiply with <span class="math inline">\(p_y\)</span> <span class="math display">\[m = \left(\frac{(1-\alpha)p_x}{\alpha} + \frac{\alpha p_x}{\alpha}\right)x\]</span> simplify <span class="math display">\[m = \left(\frac{p_x}{\alpha}\right)x\]</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>and finally, <span class="math display">\[x = D_x(p_x,p_y,m)=\frac{\alpha}{p_x}m\]</span></li>
+<li>analogously, <span class="math display">\[y = D_y(p_x,p_y,m)=\frac{1-\alpha}{p_y}m\]</span></li>
+<li>test: square-root utility obtains for <span class="math inline">\(\alpha=1/2\)</span> <span class="math display">\[
+\begin{split}
+D_x(p_x,p_y,m) &amp;= m/(2p_x)\\
+D_y(p_x,p_y,m) &amp;= m/(2p_y)
+\end{split}
+\]</span></li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="engel-curve" class="slide level3">
+<h3><span class="smallcaps">Engel</span> Curve</h3>
+<ul>
+<li>how does demand change when income is changed (or varies in the population)?</li>
+<li>once we have done the optimization, we just reinterpret:
+<ul>
+<li>the quantity from the mathematical demand function <span class="math inline">\(x=D_x(p_x,p_y,m)\)</span> can can also be interpreted as a function of income with <span class="math inline">\(p_x\)</span> and <span class="math inline">\(p_y\)</span> as fixed parameters <span class="math display">\[x=D(m)\]</span></li>
+<li>same math, different picture (typically <span class="math inline">\(m\)</span> on the horizontal axis and <span class="math inline">\(x\)</span> on the vertical), called <span class="smallcaps">Engel</span> Curve</li>
+</ul></li>
+</ul>
+<div title="[Engel]{.smallcaps}'s Law">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="smallcaps">Engel</span>’s Law</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>empirical regularity showing that the food share in household budgets decreases with income</li>
+<li>households with low incomes spend absolutely less on food than households with middle or high income, low earners spend relatively more</li>
+<li>reason: food consumption is one of the first needs to address</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="elasticity" class="slide level3">
+<h3>Elasticity</h3>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Definition</a></li><li><a href="#tabset-8-2">Demand and Supply Elasticities</a></li><li><a href="#tabset-8-3">Core Warnings</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<ul>
+<li>by how many percentage points does a function value change, when the argument changes by 1%</li>
+<li>elasticities are unit free</li>
+<li>elasticities are evaluated locally at a point</li>
+<li>equivalent definitions</li>
+</ul>
+<ol type="1">
+<li><span class="math inline">\(\displaystyle \eta(x) = f'(x) \cdot \frac{x}{f(x)}\)</span></li>
+<li><span class="math inline">\(\displaystyle \eta(x) = f'(x) \left/ \frac{f(x)}{x} \right. \qquad\)</span> (slope of function at a point divided by slope of ray through origin to that point)</li>
+<li><span class="math inline">\(\displaystyle \eta(x) = \frac{f'(x)}{x'} \left/ \frac{f(x)}{x} \right. \qquad\)</span> (note: <span class="math inline">\(x'=1\)</span>)</li>
+<li><span class="math inline">\(\displaystyle \eta(x) = \frac{\text d \ln(f(x))}{\text d \ln(x)}.\)</span></li>
+</ol>
+</div>
+<div id="tabset-8-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<h5 id="price-elasticity-of-demand">Price Elasticity of Demand</h5>
+<iframe src="https://edu.nl/jx9t4" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:50%;">
+<h5 id="price-elasticity-of-supply">Price Elasticity of Supply</h5>
+<iframe src="https://edu.nl/hh6bf" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><p>note the ray through the origin to the point on the curve</p>
+</div>
+</div>
+<div id="tabset-8-3">
+<ul>
+<li>elasticity <span class="math inline">\(\neq\)</span> slope of a curve</li>
+<li>elasticity <span class="math inline">\(\neq\)</span> constant, along a curve (including straight lines)</li>
+<li>price elasticity negative due to downward-falling demand curve</li>
+</ul>
+<p><strong>for demand/supply diagrams:</strong></p>
+<ul>
+<li>recall: <span class="math inline">\(D(p)\)</span> and <span class="math inline">\(S(p)\)</span> are quantities as functions of price, but <span class="math inline">\(p\)</span> is on the <em>vertical</em> axis!</li>
+<li>low demand elasticity <span class="math inline">\(\sim\)</span> ‘steep’ curve in demand diagram <span class="math inline">\(\sim\)</span> quantity reacts little to price change</li>
+<li>extremes:
+<ul>
+<li>vertical curve = fully inelastic (elasticity of zero)</li>
+<li>horizontal curve = fully elastic ((absolute) elasticity of infinity)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="price-changes" class="slide level3">
+<h3>Price Changes</h3>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Effects</a></li><li><a href="#tabset-9-2">Graph 1</a></li><li><a href="#tabset-9-3">Graph 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<ul>
+<li>There are two effects on <span class="math inline">\(x\)</span> from an increase in <span class="math inline">\(p_x\)</span></li>
+</ul>
+<ol type="a">
+<li><p>consumers have lower purchasing power, real incomes decrease</p></li>
+<li><p><span class="math inline">\(x\)</span> becomes relatively more expensive compared to other goods, so consumers might substitute away and allocate their money differently</p></li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>is called income effect,</li>
+<li>is called substitution effect.<br>
+</li>
+</ol></li>
+<li>Income and substitution effects may go in the same, or in the opposite direction.</li>
+<li>shape of indifference curves and/or MRS matters a lot</li>
+</ul>
+</div>
+<div id="tabset-9-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/j7qgc" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:55%;">
+<p><strong>Cobb Douglas Utility</strong></p>
+<ul>
+<li>A is observed before-price change</li>
+<li>B is observed after-price change</li>
+<li>C is ‘virtual’ point: choice that would’ve been made had the consumer been fully utility-compensated for the income effect (drop in purchasing power)
+<ul>
+<li>utility level / IC is the same in A and C</li>
+</ul></li>
+<li>A<span class="math inline">\(\to\)</span>B is total effect
+<ul>
+<li>A<span class="math inline">\(\to\)</span>C is substitution effect (along IC)</li>
+<li>C<span class="math inline">\(\to\)</span>B is income effect (between ICs)<br>
+</li>
+</ul></li>
+<li>note: use slider to change <span class="math inline">\(p_x\)</span> (<span class="math inline">\(p_y\)</span> stays fixed at 1) to get an idea how IE and SE change with it</li>
+<li>note: we could also consider the cross IE/SE on <span class="math inline">\(y\)</span> (along the vertical axis)</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-9-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/g8gxm" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:55%;">
+<p><strong>CES Utility</strong></p>
+<p>as before:</p>
+<ul>
+<li>A<span class="math inline">\(\to\)</span>B is total effect
+<ul>
+<li>A<span class="math inline">\(\to\)</span>C is substitution effect (along IC)</li>
+<li>C<span class="math inline">\(\to\)</span>B is income effect (between ICs)<br>
+</li>
+</ul></li>
+<li>note: use slider to change elasticity of substitution <span class="math inline">\(\sigma\)</span></li>
+</ul>
+</div></div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="measuring-consumer-welfare" class="slide level3">
+<h3>Measuring Consumer Welfare</h3>
+<div class="panel-tabset">
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Change of Consumer Surplus</a></li><li><a href="#tabset-10-2">Graph</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1">
+<ul>
+<li>a common welfare measure is the change of consumer surplus</li>
+<li>this can be illustrated as the “area under the demand curve”
+<ul>
+<li>“under” in our picture with price on the vertical axis means to the left of the demand curve, since we “integrate” over price</li>
+<li>typically, we fix a baseline price <span class="math inline">\(p_x^\circ\)</span> and consider a price change, so we measure the change of consumer surplus as we change the price to <span class="math inline">\(p_x^\prime\)</span>: <span class="math display">\[\Delta CS = \int_{p_x^\circ}^{p_x^\prime} D_x(p_x; p_y, m) \text{d} p_x\]</span></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-10-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/dmtf8" width="750" height="850" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>this graph illustrates the change of consumer surplus for the Cobb Douglas case
+<ul>
+<li>shift the dot to change the price of <span class="math inline">\(x\)</span></li>
+<li>this pivots the budget constraint around <span class="math inline">\(m/p_y\)</span> on the vertical axis</li>
+<li>a price increase (decrease) is associated with a loss (gain) of consumer surplus = red (green)</li>
+<li>this change reflects both substitution and income effects</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+</section>
+<section id="endowment" class="slide level3">
+<h3>Endowment</h3>
+<div class="panel-tabset">
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Budget Constraint</a></li><li><a href="#tabset-11-2">Graph</a></li><li><a href="#tabset-11-3">Labor Supply</a></li><li><a href="#tabset-11-4">Intertemporal Choice</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1">
+<ul>
+<li>consumers may be equipped with goods that they can sell: <strong>endowment</strong></li>
+<li>make two assumptions:
+<ol type="1">
+<li>those goods are the same goods consumers could also buy</li>
+<li>prices for buying or selling are the same</li>
+</ol>
+<ul>
+<li>picture changes, but analytical model unchanged</li>
+</ul></li>
+<li>denote endowment quantities <span class="math inline">\(x^e\)</span> and <span class="math inline">\(y^e\)</span>: these are <em>parameters</em>; BC changes to <span class="math display">\[
+\begin{split}
+\overbrace{p_x\cdot x+p_y\cdot y}^{\text{value of purchases}} &amp;= \overbrace{m+p_x\cdot x^e+p_y\cdot y^e}^{\text{value of income and phys. endowment}} \\
+\underbrace{p_x\cdot (x-x^e)+p_y\cdot (y-y^e)}_{\text{net purchase}} &amp;= m.
+\end{split}
+\]</span></li>
+</ul>
+</div>
+<div id="tabset-11-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+ <iframe src="https://edu.nl/vbwyd" width="500" height="600" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>consumer will sell some of the good she has plenty of (compared to the desired optimal allocation)</li>
+<li>consumer will buy more of the good she has little of</li>
+</ul>
+<div title="Observe!">
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Observe!</strong></p>
+</div>
+<div class="callout-content">
+<p>You can shift the endowment point <em>along</em> the BC. A shift implies, however, adjusting the money income accordingly. Endowment and money income are perfect substitutes in the graph. Holding <span class="math inline">\(m\)</span> constant would imply the entire BC to shift with the endowment.</p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-11-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/ybftg" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>allocate time endowment <span class="math inline">\(\bar H\)</span> between either hours of work <span class="math inline">\(h\)</span> (to the left of horizontal axis), or leisure <span class="math inline">\(\ell\)</span> (right)</li>
+<li>vertical axis: (physical) consumption good <span class="math inline">\(c\)</span> with price 1, or income</li>
+<li>indifference curve: consumer likes <span class="math inline">\(c\)</span> and <span class="math inline">\(\ell\)</span> (not <span class="math inline">\(h\)</span>), more of each is better</li>
+<li>budget constraint: if income at <span class="math inline">\(h=0\)</span> (or <span class="math inline">\(\ell = \bar H\)</span>) is zero, then BC increases from point (<span class="math inline">\(\bar H, 0\)</span>) to the left at rate <span class="math inline">\(w\)</span> (hourly wage rate)</li>
+<li>change in <span class="math inline">\(w\)</span> has income and substitution effect on labor supply</li>
+<li>at some level of <span class="math inline">\(w\)</span>, could get <span class="math inline">\(h\downarrow\)</span></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-11-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/6xt7e" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:55%;">
+<ul>
+<li>allocate consumption over time <span class="math inline">\(t=0,1\)</span>: consume either today (<span class="math inline">\(c_0\)</span>, horizontal axis), or tomorrow (<span class="math inline">\(c_1\)</span>)</li>
+<li>indifference curve: consumer likes both <span class="math inline">\(c_0\)</span> and <span class="math inline">\(c_1\)</span>, more of each is better</li>
+<li>budget constraint: endowment point determined by income today (<span class="math inline">\(m_0\)</span>) and tomorrow (<span class="math inline">\(m_1\)</span>), slope equals <span class="math inline">\(1+r\)</span> (<span class="math inline">\(r\)</span>: common interest rate on both saving and borrowing)
+<ul>
+<li>if <span class="math inline">\(r_{borrow}&gt;r_{lend}\)</span> (credit costs more than saving returns), get a kink at the income endowment point</li>
+</ul></li>
+<li>changing <span class="math inline">\(r\)</span> has income and substitution effects on the intertemporal consumption decision
+<ul>
+<li>this swivels budget constraint around income endowment point (reload page to keep fixed)</li>
+<li>often, <span class="math inline">\(r\uparrow\)</span> means consume less today but save and consume more tomorrow</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>Choices are determined by preferences &amp; constraints</li>
+<li>Preferences can be illustrated using indifference curves, which in turn are derived from a number of axioms</li>
+<li>Utility functions are a mathematical convenience tool to represent preferences, with ICs as their level curves</li>
+<li>Utility maximization subject to a budget constraint leads to demand for goods</li>
+<li>The demand function shows quantity demanded in dependence of prices and incomes</li>
+<li>Prices and incomes can be influenced by policy (e.g., taxes and transfers)</li>
+<li>Price variation can be used to derive individual welfare measures such as change in consumer surplus</li>
+<li>labor supply and intertemporal choice can best be understood in the framework of consuming with an endowment</li>
+</ul>
+<!-- ** NEW SECTION ******************************************************* -->
+</section>
+
+<section id="aggregation-and-market-demand" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.2">
+<h2><span class="header-section-number">0.2</span> Aggregation and Market Demand</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="many-consumers" class="slide level3">
+<h3>Many Consumers</h3>
+<ul>
+<li>classical macroeconomics assumes that aggregate economic relationships can be modeled as if they were driven by decisions of a ‘representative consumer’, some middle-of-the-road guy whose behavior is very similar to everybody else’s</li>
+<li>modern macroeconomics explictly takes heterogeneous agents into account</li>
+<li>the behavior of such diverse individuals needs to be aggregated; they differ
+<ul>
+<li>in terms of incomes</li>
+<li>in terms of preferences</li>
+</ul></li>
+<li>prices may be the same for everybody (we assume)</li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="preference-heterogeneity" class="slide level3">
+<h3>Preference Heterogeneity</h3>
+<ul>
+<li>in the real world, most consumers are different from one another, their tastes or preferences are not identical but heterogeneous</li>
+<li>in our model, we can take this into account in a parameterized <a href="#/sec-CDCESIC"><span class="smallcaps">Cobb Douglas</span></a> utility by making the preference parameter <span class="math inline">\(\alpha_i\)</span> specific for an individual <span class="math inline">\(i=1,\ldots,N\)</span>: <span class="math display">\[u_i(x,y)=x^{\alpha_i} \cdot y^{1-\alpha_i}\]</span></li>
+</ul>
+<h4 id="example">Example</h4>
+<ul>
+<li><span class="math inline">\(N=5\)</span> and a uniform distribution of <span class="math inline">\(\alpha\)</span>: <span class="math inline">\(0.1\)</span>, <span class="math inline">\(0.3\)</span>, <span class="math inline">\(0.5\)</span>, <span class="math inline">\(0.7\)</span>, <span class="math inline">\(0.9\)</span>, implies a uniform distribution of budget shares for good <span class="math inline">\(x\)</span>:<br> <span class="math inline">\(\qquad 10\%, 30\%, 50\%, 70\%, 90\%\)</span></li>
+<li>if there is a negative correlation with income, and income is likewise uniformly distributed, e.g.<br> <span class="math inline">\(\qquad 250, 200, 150, 100, 50\)</span> euros, then consumers spend<br> <span class="math inline">\(\qquad 25, 60, 75, 70, 45\)</span> euros on <span class="math inline">\(x\)</span>—this is not uniform anymore!</li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="horizontal-aggregation" class="slide level3">
+<h3>Horizontal Aggregation</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>denote quantity demanded by consumer <span class="math inline">\(i\)</span> as <span class="math inline">\(x_i=D_i(p)\)</span>, then aggregate or market demand is <span class="math display">\[X = D(p) = \sum_i^N D_i(p)\]</span></li>
+<li>graphically, we aggregate horizontally (price on the vertical axis and identical for all consumers)</li>
+<li>market demand curve will be flatter than individual curves</li>
+</ul>
+</div><div class="column" style="width:40%;">
+ <iframe src="https://edu.nl/yhbba" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- End Two Column Setup _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ -->
+<div title="Kinks">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Kinks</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>horizontally aggregating linear individual demand curves may lead to a piece-wise linear aggregate demand curve with kinks</li>
+<li>this happens when the vertical intercept differs between individuals</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="aggregation-and-income-distribution" class="slide level3">
+<h3>Aggregation and Income Distribution</h3>
+<ul>
+<li>if there is no preference heterogeneity it may be tempting to write <span class="math display">\[X = D(p,\overline{m})\]</span> where <span class="math inline">\(\overline{m}\)</span> is average income in the country (or market), or some other aggregate (like GDP per capita)</li>
+<li>however, doing the exact aggregation <span class="math display">\[X = \sum_i^N D_i(p_x, p_y, m_i)\]</span> shows that market demand depends through the individual demand functions on all individual incomes and hence on the entire income distribution</li>
+<li>if individual demand functions are nonlinear in <span class="math inline">\(m_i\)</span>, it is unlikely that average income is a good proxy for the actual income distribution</li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary-1" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>prices are determined at the market level, so individual demands must be aggregated across consumers, given the price</li>
+<li>in a typical diagram with price on the vertical axis, the aggregation is “horizontal” (adding up quantities, given the price)</li>
+<li>with heterogeneous incomes, aggregate demand tends to depend on the entire income distribution</li>
+<li>with heterogeneous preferences, aggregating from the micro level may become technically involved</li>
+</ul>
+<!-- ** NEW SECTION ******************************************************* -->
+</section>
+
+<section id="single-competitive-firm" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.3">
+<h2><span class="header-section-number">0.3</span> Single Competitive Firm</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="technology" class="slide level3">
+<h3>Technology</h3>
+<div class="panel-tabset">
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">Production Function</a></li><li><a href="#tabset-12-2">Production Possibilities</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:60%;">
+ <iframe src="https://edu.nl/u9wdn" width="700" height="390" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:40%;">
+<ul>
+<li>a firm’s production technology relates input quantity <span class="math inline">\(z\)</span> to maximally feasible output quantity <span class="math inline">\(q=f(z)\)</span></li>
+<li>its derivative is the marginal product or marginal productivity <span class="math inline">\(MP=f'(z)\)</span></li>
+<li>the concave case is often studied and refers to decreasing returns to scale</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<ul>
+<li>in case there are two inputs, the left panel shows <span class="math inline">\(q=f(z_1, z_2=\text{low})\)</span> and <span class="math inline">\(q=f(z_1, z_2=\text{high})\)</span> (dotted)</li>
+</ul>
+</div>
+<div id="tabset-12-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+ <iframe src="https://edu.nl/q4937" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>the production possibilities frontier (PPF) shows what an economy can maximally produce in terms of multiple outputs (say, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>) when the amount of available input is limited to <span class="math inline">\(\bar z\)</span>, and a choice needs to be made whether to use a given input unit in <span class="math inline">\(x\)</span> or in <span class="math inline">\(y\)</span>: <span class="math inline">\(z_x\)</span> or <span class="math inline">\(z_y\)</span></li>
+<li>the (negative of the) slope of the PPF is called the <em>marginal rate of transformation</em>, MRT</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="cost-function" class="slide level3">
+<h3>Cost Function</h3>
+<div class="panel-tabset">
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Single Input</a></li><li><a href="#tabset-13-2">Marginal Cost</a></li><li><a href="#tabset-13-3">Fixed Cost</a></li><li><a href="#tabset-13-4">Average Cost</a></li><li><a href="#tabset-13-5">Notes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>firm employs labor <span class="math inline">\(z\)</span> (hours) at wage rate <span class="math inline">\(w\)</span> (per hour), then dollar outlays are <span class="math inline">\(w\cdot z\)</span></li>
+<li><em>invert</em> production function to substitute out <span class="math inline">\(z\)</span> for a function of <span class="math inline">\(q\)</span>: <span class="math display">\[q=f(z)\quad \Longrightarrow \quad z=f^{-1}(q)\equiv g(q)\]</span> and plug it into outlays to get the cost of output function <span class="math inline">\(C(q)\)</span>: <span class="math display">\[w\cdot z = w\cdot g(q) \equiv C(q).\]</span></li>
+<li>i.o.w. the cost of output function is the <span class="alert">scaled inverse</span> of the production function</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div title="Example">
+<div class="callout callout-caution no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Example</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[w=3\]</span> <span class="math display">\[q = 2\sqrt{z}\]</span> <span class="math display">\[g(q) = \frac{q^2}{4}\]</span> <span class="math display">\[C(q) = \frac{3}{4} \cdot q^2 \]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-13-2">
+<ul>
+<li><p>marginal change in cost when producing additional output <span class="math display">\[MC(q)=\frac{\mathrm{d}C(q)}{\mathrm{d}q} = C'(q).\]</span></p></li>
+<li><p>in this simple 1-input case, MC is proportional to inverse of marginal productivity MP <span class="math display">\[MC=\frac{w}{MP}\]</span></p></li>
+</ul>
+</div>
+<div id="tabset-13-3">
+<ul>
+<li><span class="math inline">\(F\)</span>: cost components that the firm cannot influence through variation of inputs</li>
+<li>2-input case: firm can only change labor, and has to take the level of capital as given: the associated outlays (for capital) are fixed</li>
+<li>outlays associated with the variable input will give rise to variable cost, <span class="math inline">\(VC(q)\)</span>, that vary with the production level</li>
+</ul>
+</div>
+<div id="tabset-13-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>ratio of total production cost at production level <span class="math inline">\(q\)</span> in relation to that production level: <span class="math display">\[AC(q)=\frac{C(q)}{q} = \underbrace{\frac{F}{q}}_{AFC} +\underbrace{\frac{V(q)}{q}}_{AVC}\]</span></p></li>
+<li><p><span class="math inline">\(F/q\)</span> is hyperbolic</p></li>
+<li><p>if <span class="math inline">\(VC(q)\)</span> is linear in output <span class="math display">\[VC(q)=b\cdot q,\qquad AVC=b=MC\]</span></p></li>
+<li><p><span class="math inline">\(\min_q AC(q)\to q^{mes}\)</span> is minimum efficient scale</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe src="https://edu.nl/hqtt7" width="500" height="450" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-13-5">
+<ul>
+<li>similar to a consumer’s substitution between ingredients of a consumption bundle, a firm may use several inputs in production, and find that it can substitute between them to achieve the same level of output at different input combinations</li>
+<li>firm would first try to find the optimal combination of inputs that, at given input prices, delivers the target level of output at the smallest expense</li>
+<li>under changing relative factor prices, input substitution can deliver additional cost saving</li>
+<li>total cost <span class="math inline">\(C(q)\)</span> is then lower than if one or more inputs were kept fixed</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="competitive-firm" class="slide level3">
+<h3>Competitive Firm</h3>
+<div class="panel-tabset">
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">Profit</a></li><li><a href="#tabset-14-2">Profit Max</a></li><li><a href="#tabset-14-3">Supply</a></li><li><a href="#tabset-14-4">Graph</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1">
+<ul>
+<li>goal of any firm is to make money</li>
+<li>profit <span class="math inline">\(\Pi(q)\)</span> is difference between sales revenue <span class="math inline">\(R(q)\)</span> and cost <span class="math inline">\(C(q)\)</span></li>
+<li>profit should not go negative, else the firm better stops: <span class="math inline">\(\Pi(q) \ge 0\)</span></li>
+<li>production should not exceed demand <span class="math inline">\(q \le D(p)\)</span></li>
+<li>firm is constrained by its technology, which is given (<span class="math inline">\(C(q)\)</span> reflects to an important degree the production function)</li>
+<li>first order condition of profit maximization implicitly defines the optimal <span class="math inline">\(q\)</span> <span class="math display">\[MR(q)-MC(q)=0.\]</span></li>
+</ul>
+</div>
+<div id="tabset-14-2">
+<ul>
+<li><p>marginal revenue <span class="math inline">\(MR(q)\)</span> equals <span class="math inline">\(p\)</span>: the firm takes <span class="math inline">\(p\)</span> as given, but is unrestricted by demand: the firm can supply infinitely much</p></li>
+<li><p>profit maximization implies <span class="math display">\[R(q) = p\cdot q \quad \Longrightarrow \quad MR(q) = \frac{\text{d}R(q)}{\text{d}q} = p \quad \Longrightarrow \quad p-MC(q)=0.\]</span></p></li>
+<li><p>implies marginal cost pricing: firm adjusts <span class="math inline">\(q\)</span> such that MC equals <span class="math inline">\(p\)</span></p></li>
+<li><p>note: <span class="math inline">\(q\)</span> is only chosen if price covers average cost and firm breaks even, <span class="math inline">\(\Pi\ge 0\)</span> <span class="math display">\[
+\Pi = p\cdot q - C(q)\ge 0 \quad \Longrightarrow \quad p\ge \frac{C(q)}{q} = AC(q),
+\]</span></p></li>
+</ul>
+</div>
+<div id="tabset-14-3">
+<ul>
+<li>market price <span class="math inline">\(p\)</span> is given parameter</li>
+<li>hence, competitive firm’s supply function <span class="math display">\[q=S(p)\]</span> depends on the price</li>
+<li>firm chooses <span class="math inline">\(q\)</span> such that its <span class="math inline">\(MC\)</span> equals the given market price, under the condition that <span class="math inline">\(q\)</span> exceeds its minimum efficient scale <span class="math inline">\(q^{mes}\)</span></li>
+<li>supply function is the upward-sloping part of MC function as long as <span class="math inline">\(p\ge AC(q)\)</span></li>
+</ul>
+</div>
+<div id="tabset-14-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(MC\)</span> intersects <span class="math inline">\(AC\)</span> curve in its minimum at <span class="math inline">\(q^{mes}\)</span></li>
+<li>since <span class="math inline">\(p\)</span> is given (competitive firm), and firm expands production until the increasing <span class="math inline">\(MC\)</span> curve equals <span class="math inline">\(p\)</span>, profit equals the orange reactangle</li>
+</ul>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>simulate a price change by shifting the given market price <span class="math inline">\(p\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<iframe src="https://edu.nl/xv9rr" width="450" height="450" style="border: 1px solid #ccc"></iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary-2" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>competitive firms that take prices as given and choose a profit maximizing quantity are at the heart of the competitive model that brings maximal welfare to consumers</li>
+<li>important for understanding the output decision are production technology and various cost concepts that derive from it</li>
+<li>firms cease to exist (exit the market) if economic profits turn (structurally) negative, since an economic profit of zero is the outside option that firm owners can get by putting their resources into other activities</li>
+</ul>
+<!-- ** NEW SECTION ******************************************************* -->
+</section>
+
+<section id="market-supply-equilibrium-and-welfare" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.4">
+<h2><span class="header-section-number">0.4</span> Market Supply, Equilibrium, and Welfare</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="demandsupply-equilibrium" class="slide level3">
+<h3>Demand/Supply &amp; Equilibrium</h3>
+<div class="panel-tabset">
+<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">Intro</a></li><li><a href="#tabset-15-2">Demand-Supply Diagram</a></li><li><a href="#tabset-15-3">Demand</a></li><li><a href="#tabset-15-4">Supply</a></li><li><a href="#tabset-15-5">Equilibrium</a></li><li><a href="#tabset-15-6">Notes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-15-1">
+<ul>
+<li>So far, prices in themselves were just given to individual consumers and firms</li>
+<li>what mattered in particular were relative prices (<span class="math inline">\(p_x/p_y\)</span>)</li>
+<li>how are price levels, such as <span class="math inline">\(p_x\)</span> or <span class="math inline">\(p_y\)</span> determined?
+<ul>
+<li>this happens at the market level</li>
+<li>prices have the function to clear the markets</li>
+<li>they adjust whenever market supply is not equal to market demand</li>
+</ul></li>
+<li>changing <span class="math inline">\(p_x\)</span> or <span class="math inline">\(p_y\)</span> change <span class="math inline">\(p_x/p_y\)</span> and feed back into individual decisions (reoptimization)</li>
+</ul>
+<h5 id="notation">Notation</h5>
+<p>denote</p>
+<ul>
+<li>market level quantity demanded as <span class="math inline">\(X\)</span></li>
+<li>market level quantity supplied as <span class="math inline">\(Q=\sum_j q_j\)</span></li>
+<li>equilibrium condition: <span class="math inline">\(X=Q\)</span></li>
+</ul>
+</div>
+<div id="tabset-15-2">
+<p><br></p>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/ymc9h" width="500" height="600" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>quantities demanded and supplied are functions of the price: <span class="math inline">\(D(p), S(p)\)</span></li>
+</ul>
+<div title="Observe!">
+<div class="callout callout-caution no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Observe!</strong></p>
+</div>
+<div class="callout-content">
+<p>Price is on the vertical, quantity on the horizontal axis!</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>equilibrium: <span class="math inline">\(p^\star: D(p^\star) = S(p^\star) \equiv Q^\star\)</span></li>
+</ul>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>swivel demand, shift supply, or</li>
+<li>show the aggregation from individual demand/supply curves</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-15-3">
+<ul>
+<li>demand is based on choices of ‘how to spend it and on what’:</li>
+<li>rational consumers individually maximize their own satisfaction/utility</li>
+<li>subject to available income, and given prices (budget constraint)
+<ul>
+<li>individual demand, per good</li>
+</ul></li>
+<li>aggregate across all individuals, per good: market demand
+<ul>
+<li>for given price, add up the quantities (‘horizontal’ aggregation)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-15-4">
+<ul>
+<li>supply is based on choices of ‘what &amp; how much to make’:</li>
+<li>rational firms individually maximize their own profit</li>
+<li>subject to available technology (production function), and given prices
+<ul>
+<li>individual supply, per good</li>
+</ul></li>
+<li>aggregate across all individual firms, per good: market supply
+<ul>
+<li>for given price, add up the quantities (‘horizontal’ aggregation)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-15-5">
+<ul>
+<li>per good/market: market clearing implies quantity demanded equals quantity supplied
+<ul>
+<li>price determination per good</li>
+<li>feedback into individual decisions</li>
+</ul></li>
+<li>think of “the market” as a system of many markets of individual goods and inputs
+<ul>
+<li>considering a single market in isolation, we talk of <strong>partial equilibrium</strong> analysis</li>
+<li>considering many markets simultaneously, we may talk of <strong>general equilibrium</strong> analysis</li>
+<li>in this course, we may consider two markets at the same time</li>
+</ul></li>
+<li>an equilibrium then is a set of prices leading to <strong>simultaneous</strong> market clearing of all markets in the system</li>
+</ul>
+</div>
+<div id="tabset-15-6">
+<ul>
+<li>consumers also supply capital (savings) and labor to the market
+<ul>
+<li>consumers’ incomes are derived from their saving and working choices</li>
+<li>this will make incomes <em>endogenous</em> to the analysis<br>
+</li>
+</ul></li>
+<li>firms also demand (financial and physical) capital and labor on the market</li>
+<li>most models are static, things happen instantaneously, and at the same time</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="surplus-and-welfare" class="slide level3">
+<h3>Surplus and Welfare</h3>
+<div class="panel-tabset">
+<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">Definitions</a></li><li><a href="#tabset-16-2">Graph</a></li></ul>
+<div class="tab-content">
+<div id="tabset-16-1">
+<ul>
+<li>consumer surplus: difference between marginal willingness to pay and price paid
+<ul>
+<li>to be aggregated across all units/consumers/producers in the market</li>
+</ul></li>
+<li>similar: producer surplus as firm’s value of economic activity (disregarding fixed cost)
+<ul>
+<li>or: difference between minimum necessary compensation for production (marginal cost) and price obtained per unit</li>
+</ul></li>
+<li>‘welfare’: efficient use of available but scarce resources</li>
+<li>measure of (<span class="smallcaps">Paretian</span>) welfare: sum of producer and consumer surplus</li>
+<li>competitive market with undistorted flexible prices leads to maximal (<span class="smallcaps">Paretian</span>) welfare <span class="math inline">\(:=\)</span> the benchmark</li>
+</ul>
+</div>
+<div id="tabset-16-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/bfjpy" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>competitive markets maximize surplus</li>
+<li>even when demand (or supply) conditions change</li>
+</ul>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>change demand to see that total surplus is always maximized</li>
+<li>reason: endogenous equilibrium adjustment to changed conditions</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="distortions-and-welfare-deadweight-loss" class="slide level3">
+<h3>Distortions and Welfare (Deadweight) Loss</h3>
+<div class="panel-tabset">
+<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">Issue</a></li><li><a href="#tabset-17-2">Graph</a></li><li><a href="#tabset-17-3">Calculating the Triangle</a></li></ul>
+<div class="tab-content">
+<div id="tabset-17-1">
+<ul>
+<li>distortions (taxes, quotas, regulation, etc.) lead to deviations from the benchmark <span class="math inline">\(:=\)</span> welfare loss or deadweight loss (DWL)</li>
+<li>the source of the deadweight loss is that at the resulting (or allowed) price, the quantities supplied and demanded diverge, and the shorter side of the market determines the quantity actually traded</li>
+<li>in other words: at too low a quantity, consumers are willing to pay more than it would cost the producer to supply those extra units</li>
+<li>in other words: welfare loss results from units of quantity <strong>not</strong> produced (or, traded), even though fundamental economic relations (the cost and demand structure) would allow that production to take place</li>
+</ul>
+</div>
+<div id="tabset-17-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/a34nn" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>gov’t fixes price at <span class="math inline">\(p_0\)</span>, equilibrium quantity <span class="math inline">\(Q_0\)</span> results (shorter side of the market)</li>
+<li>distortions to competitive price adjustment can leave the equilibrium point at <span class="math inline">\(F\)</span>, associated with a deadweight loss</li>
+<li>even when demand (or supply) conditions change</li>
+</ul>
+</div><!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+<div id="tabset-17-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{eqnarray*}
+Q = D(p) &amp;=&amp; 7.5 - p\\
+Q = S(p) &amp;=&amp; -0.5+p.
+\end{eqnarray*}\]</span> equilibrium: <span class="math display">\[Q^\star = 3.5  \qquad p^\star = 4.\]</span></p>
+<p>If actual quantity traded is <span class="math inline">\(Q_0 = 1\)</span>, welfare loss triangle is <span class="math display">\[\frac{1}{2} \cdot \underbrace{(Q^\star-Q_0)}_{b} \times \underbrace{(p_0 - p_0')}_{h} = 0.5 \cdot 2.5 \cdot 5 = 6.25.\]</span></p>
+</div><div class="column" style="width:50%;">
+<iframe src="https://edu.nl/tg9tc" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div></div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary-3" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>aggregated market demand (across consumers) and market supply (across firms) determine the equilbrium price and quantities in the market</li>
+<li>from here, aggregate welfare measures such as consumer surplus and producer surplus can be determined</li>
+<li>any deviation from a total-surplus-maximizing competitive equilbrium hence triggers a welfare loss (aka deadweight loss)</li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="game-theory-two-players" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.5">
+<h2><span class="header-section-number">0.5</span> Game Theory: Two Players</h2>
+
+</section>
+<section id="game-theory" class="slide level3">
+<h3>Game Theory</h3>
+<ul>
+<li>Game theory offers tools of analysis of strategy and conflict, and naturally finds numerous applications in modeling economic and political decisions</li>
+<li>there are two main branches:
+<ul>
+<li>non-cooperative game theory</li>
+<li>cooperative game theory</li>
+</ul></li>
+<li>cooperative game theory deals with actors cooperating inside a group (coalition, alliance) <br> and agreeing to split a slice of cake, and competing as a group with others about who gets what slice; <br> inside the group, binding agreements are possible <br></li>
+<li>here: focus on non-cooperative games</li>
+</ul>
+</section>
+<section id="non-cooperative-game-theory" class="slide level3">
+<h3>Non-Cooperative Game Theory</h3>
+<ul>
+<li>strategic interaction of rational (and typically selfish) players</li>
+<li>rules of the game and rationality of players are <strong>common knowledge</strong></li>
+<li>common knowledge: player 1 knows that player 2 knows that player 1 knows </li>
+<li>noncooperative game theory: players max private pay-offs<br> but take into account the effect of other players’ choices on their own pay-offs</li>
+<li>no direct cooperation, no formal means of enforcing cooperative behavior (no binding agreements)</li>
+<li>this does not mean that in a noncooperative game players cannot cooperate; they can do so implicitly</li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="dominant-strategies" class="slide level3">
+<h3>Dominant Strategies</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>payoffs per player depend on actions chosen by both players</li>
+<li>they move simultaneously and do not talk, cooperate, or commit</li>
+<li>no matter what US chooses: China has highest personal payoff from playing Pollute (<strong>dominant strategy</strong>)</li>
+<li>symmetry: same for US</li>
+<li>upshot: equilibrium in dominant strategies
+<ul>
+<li>two selfish, rational and independent players have no reason to deviate from polluting</li>
+<li>dilemma: coordination would have led to overall improvement</li>
+</ul></li>
+<li>game is known as Prisoners’ Dilemma</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h4 id="example-us-and-china-pollution-game">Example: US and China Pollution Game</h4>
+<p><img data-src="images/pdsimple.png"></p>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="weak-dominance" class="slide level3">
+<h3>Weak Dominance</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>if one player’s payoffs are identical between outcomes, we may speak of</li>
+</ul>
+<div title="Weak Dominance">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Weak Dominance</strong></p>
+</div>
+<div class="callout-content">
+<p>action <span class="math inline">\({\cal B}\)</span> weakly dominates <span class="math inline">\({\cal A}\)</span> if</p>
+<ol type="1">
+<li><span class="math inline">\({\cal B}\)</span>’s payoff is at least as high <span class="math inline">\({\cal A}\)</span>’s— irrespective of the opponent’s choice; and</li>
+<li>there is at least one set of opponents’ action for which <span class="math inline">\({\cal B}\)</span>’s payoff is strictly higher than <span class="math inline">\({\cal A}\)</span>’s</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Pollute is weakly dominant for China, but (Abate,Abate) is not an equilibrium</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/pdweak.png"></p>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="person-prisoners-dilemma" class="slide level3">
+<h3>2-Person Prisoner’s Dilemma</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>the PD solution (collectively inefficient equilibrium in dominant strategies) obtains for general values of pay-offs, as long as <span class="math inline">\(A&gt;B&gt;C&gt;D\)</span></li>
+<li>note: the ranking is important, not the values as such</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h4 id="generalized-payoffs">Generalized Payoffs</h4>
+<p><img data-src="images/pdgen.png"></p>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="equilibria-in-games" class="slide level3">
+<h3>Equilibria in Games</h3>
+<div class="columns">
+<p><img data-src="images/Nashmotivate.png" style="width:80.0%"></p>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="nash-equilibrium" class="slide level3">
+<h3><span class="smallcaps">Nash</span> Equilibrium</h3>
+<div class="columns">
+<p><img data-src="images/Nash.png"></p>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="canonical-examples" class="slide level3">
+<h3>Canonical Examples</h3>
+<div class="columns">
+<p><img data-src="images/Nashexmpl.png" style="width:80.0%"></p>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="further-remarks" class="slide level3">
+<h3>Further Remarks</h3>
+<ul>
+<li>many (or most) games do not have a dominant strategy (equilibrium)</li>
+<li>equilibria in strictly dominant strategies are always also <span class="smallcaps">Nash</span> equilibria</li>
+<li><span class="smallcaps">Nash</span> equilibria may not be unique</li>
+<li><span class="smallcaps">Nash</span> equilibria may also not exist (with so-called `pure’ strategies)</li>
+<li>further extension: easy to extend to multiple actions per player (increase the row or column space), keeping the matrix form representation</li>
+<li>further extension: multiplayer games (<span class="math inline">\(N&gt;2\)</span>) may call for a different form of representation</li>
+<li>further extension: so-called ‘mixed’ (as opposed to ‘pure’) strategy games always have <span class="smallcaps">Nash</span> equilibria</li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary-4" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>game theory studies strategic interaction of players</li>
+<li>often, as elsewhere in economics, we assume self-interested rational players that maximizing their own payoffs</li>
+<li>since payoffs will depend on choices of every player, each player better take into account what others can be expected to do</li>
+<li>the main equilibrium concept in game theory is that of a Nash equilibrium, where everyone plays the best response to everybody else</li>
+<li>there may be none, one or many Nash equilbria in a game</li>
+<li>the Prisoner’s Dilemma is a special case where players have dominant strategies</li>
+</ul>
+<!-- ** NEW SECTION ******************************************************* -->
+</section>
+
+<section id="monopoly-and-duopoly" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="0.6">
+<h2><span class="header-section-number">0.6</span> Monopoly and Duopoly</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="standard-monopoly" class="slide level3">
+<h3>Standard Monopoly</h3>
+<div class="panel-tabset">
+<ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">Graph</a></li><li><a href="#tabset-18-2">Math</a></li></ul>
+<div class="tab-content">
+<div id="tabset-18-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/7ebm4" width="500" height="650" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>main issue of monopoly is that it produces too little
+<ul>
+<li>root of deadweight loss of monopoly</li>
+</ul></li>
+<li>this is a rational equilibrium choice since the firm cannot fully appropriate the full marginal revenue: if it cannot discriminate between customers according to their willingess to pay, the firm loses revenue on the inframarginal units</li>
+</ul>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>to see how marginal revenue evolves, slide the blue movable dot on the quantity axis (shows before toggling)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-18-2">
+<ul>
+<li><p>profit maximization <span class="math inline">\(\displaystyle \qquad \max_Q \Pi(Q) = R(Q) - C(Q)\)</span> requires <span class="math inline">\(\qquad MR(Q)=MC(Q)\)</span></p></li>
+<li><p>Suppose, <span class="math inline">\(MC(Q)=c\)</span> and <span class="math inline">\(Q = D(p) = a-p\)</span>, then <span class="math inline">\(R(Q) = p\cdot Q=(a-Q) \cdot Q\)</span> <span class="math display">\[
+MR(Q) = \frac{\mathrm{d}}{\mathrm{d}q} R(Q) = (-1)\cdot Q + (a-Q)\cdot 1 = a-2Q \stackrel{MC}{=}c.
+\]</span></p></li>
+<li><p>Thus, equilibrium quantity, price, and <span class="alert">markup</span> <span class="math display">\[Q^m = \frac{a-c}{2}, \qquad p^m = \frac{a+c}{2} &gt; c, \qquad \text{relative markup} = \frac{p^m-c}{p^m}&gt;0\]</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="cartel-monopoly" class="slide level3">
+<h3>Cartel Monopoly</h3>
+<p>Instability of cartels: difficulty of joining forces to behave as monopoly</p>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/cartel.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>2 firms in a cartel: collude or break cartel (‘deviate’ from collusion)
+<ul>
+<li>cartel collusion realizes monopoly profits that can be shared<br>
+</li>
+</ul></li>
+<li>‘deviate’ is <span class="alert">dominant</span> strategy for both
+<ul>
+<li>monopoly breaks down</li>
+<li>coordination would have led to higher profits</li>
+<li>compare Prisoner’s dilemma</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="duopoly-quantities" class="slide level3">
+<h3>Duopoly: Quantities</h3>
+<div class="panel-tabset">
+<ul id="tabset-19" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-19-1">Issue</a></li><li><a href="#tabset-19-2">Math Example</a></li><li><a href="#tabset-19-3"><span class="math inline">\(\ldots\)</span>cont’d.</a></li><li><a href="#tabset-19-4">Graph</a></li><li><a href="#tabset-19-5">Isoprofit Contours</a></li><li><a href="#tabset-19-6">Oligopoly</a></li></ul>
+<div class="tab-content">
+<div id="tabset-19-1">
+<ul>
+<li>2 firms (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>) in the market, constant MC, no fixed cost, both produce the same, identical good</li>
+<li>consumers are indifferent to buying at <span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span></li>
+<li>if firms each choose their quantity, they will take into account that
+<ul>
+<li>the other firm makes choices (so <span class="math inline">\(A\)</span> <span class="alert">reacts</span> to <span class="math inline">\(B\)</span>, as in a game with <span class="smallcaps">Nash</span> equilibrium strategies)</li>
+<li>the price falls if they together produce more (falling demand schedule)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-19-2">
+<ul>
+<li>suppose, market demand <span class="math inline">\(Q = q_A + q_B = 10-p\)</span></li>
+<li>marginal cost <span class="math inline">\(\mathit{MC}_A=\mathit{MC}_B = 3\)</span></li>
+<li>demand for firm <span class="math inline">\(A\)</span>: <span class="math inline">\(\displaystyle \qquad p_A(q_A, q_B) = 10 - q_A - q_B\)</span></li>
+<li>marginal revenue (‘twice as steep’ as demand) equal to MC (profit max condition) <span class="math inline">\(\mathit{MR}_A  =  10 - 2 q_A -  q_B = \mathit{MC}_A\)</span></li>
+<li><span class="alert">reaction function</span>: <span class="math inline">\(\displaystyle 1 - 2 q_A - q_B = 3 \qquad \to \qquad q_A = \frac{1}{2}(7  - q_B)\)</span></li>
+<li>similar for <span class="math inline">\(B\)</span>, and solve [<span class="math inline">\(q_A\)</span> as function of <span class="math inline">\(q_B\)</span>, etc.] <span class="math display">\[q_A(q_B) = \frac{1}{2} ({7 - q_B})\quad \text{and} \quad q_B(q_A) = \frac{1}{2} ({7 - q_A})\]</span></li>
+</ul>
+</div>
+<div id="tabset-19-3">
+<ul>
+<li>equilibrium: <span class="math inline">\(q_A = q_A (q_B) = q_A (q_B (q_A))\)</span> <span class="math display">\[q_A = \frac{1}{2} \left[{7 - \frac{1}{2} ({7 - q_A})} \right]\]</span></li>
+<li>final solution for eq.&nbsp;quantities <span class="math inline">\(\displaystyle \qquad q_A^d = 2\frac{1}{3} \quad \text{and} \quad  q_B^d = 2\frac{1}{3}\)</span></li>
+<li>identical firms have identical market shares &amp; profits
+<ul>
+<li>(ttl) market quantity, <span class="math inline">\(\displaystyle Q^d = 4\frac{2}{3}\)</span><br>
+</li>
+<li>market price, <span class="math inline">\(\displaystyle p^d = 5\frac{1}{3} &gt; MC_i = 3,\; i=A,B\)</span></li>
+<li>profits, <span class="math inline">\(\Pi_i = 5\frac{4}{9},\; i=A,B\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-19-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/wetu8" width="500" height="650" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:55%;">
+<ul>
+<li>reaction function (or best response function) is the optimal quantity decision of a firm given the competitor’s quantity</li>
+<li><span class="smallcaps">Nash</span> equilibrium is where both reaction functions cross, or where best reponses are mutually compatible</li>
+<li>equilibrium will react to, among others, changes in marginal cost</li>
+<li>quantities are so-called <em>strategic substitutes</em> (<span class="math inline">\(A\)</span> responds to <span class="math inline">\(B\)</span>’s quantity change in the opposite direction), reaction functions slope downwards</li>
+</ul>
+<div title="Play!">
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Play!</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>toggle to show isoprofit contours (see next tab)</li>
+<li>slide <span class="math inline">\(MC_A\)</span> to see asymmetric impact of marginal cost</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-19-5">
+<ul>
+<li>along an isoprofit contour, profit stays constant for a given firm</li>
+<li>put your finger on the reaction function of one firm, at a certain level of an isoprofit curve</li>
+<li>if you increase the firm’s output, <em>holding constant</em> the output of the other firm, profit declines, since both firms produce more and can only sell it to consumers if the price drops</li>
+<li>if you decrease the firm’s output, <em>holding constant</em> the output of the other firm, profit declines, since the firm gives up market share</li>
+<li>the reaction function is the point where, given the level of output of the other firm, your firm makes the highest possible profit that balances off both effects</li>
+</ul>
+</div>
+<div id="tabset-19-6">
+<ul>
+<li>symmetric <span class="smallcaps">Cournot</span> oligopoly with <span class="math inline">\(N_f\)</span> firms</li>
+<li>simple extension of the <span class="math inline">\(N_f=2\)</span> duopoly case</li>
+<li>nests as special cases: <span class="math display">\[\text{standard monopoly} \quad \text{when} \quad N_f=1\]</span> and <span class="math display">\[\text{perfect competition} \quad \text{when} \quad N_f\to \infty.\]</span><br>
+</li>
+<li>total profit and markups <span class="math inline">\(\downarrow\)</span> and total quantity and surplus <span class="math inline">\(\uparrow\)</span> as <span class="math inline">\(N_f\uparrow\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary-market-structure" class="slide level3">
+<h3>Summary Market Structure</h3>
+<ul>
+<li>perfect competition is welfare maximizing (<span class="smallcaps">Pareto</span> efficient), price equals marginal cost</li>
+<li>standard monopoly maximizes profits such that price <span class="math inline">\(&gt;\)</span> marginal cost; the difference (mark-up) goes to the firm, and the consumer buys less
+<ul>
+<li>policy response: kindle competition, encourage free entry</li>
+</ul></li>
+<li><span class="smallcaps">Cournot</span> duopoly outcome is in between competition and monopoly (in terms of price, welfare and quantity)</li>
+</ul>
+
+
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
+</section>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/VUnobg.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Public Economics • Microeconomics Review • © 2025-26 Stefan Hochguertel</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
