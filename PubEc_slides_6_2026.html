@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/mathjax3tags/mathjax3.js"></script>
+<script src="site_libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.21">
+
+  <meta name="author" content="Stefan Hochguertel">
+  <title>Public Economics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-024771c6d174ed544a608708b7da6505.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/starlings.jpg" data-background-opacity="0.67" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Public Economics</h1>
+  <p class="subtitle">BSc Course</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Stefan Hochguertel 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:s.hochguertel@vu.nl">s.hochguertel@vu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Vrije Universiteit Amsterdam
+          </p>
+    </div>
+</div>
+
+  <p class="date">Wednesday, February 18, 2026</p>
+</section>
+<section>
+<section id="social-security-and-pensions" class="title-slide slide level1 center" data-background-color="#049baa" data-number="6">
+<h1><span class="header-section-number">6</span> Social Security and Pensions</h1>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+<section id="pensions-and-retirement-systems" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="6.1">
+<h2><span class="header-section-number">6.1</span> Pensions and Retirement Systems</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="demographics-and-retirement-systems" class="slide level3">
+<h3>Demographics and Retirement Systems</h3>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Issues</a></li><li><a href="#tabset-1-2">Life Expectancy</a></li><li><a href="#tabset-1-3">Mortality</a></li><li><a href="#tabset-1-4">Dependency</a></li><li><a href="#tabset-1-5">Labor Prod.</a></li><li><a href="#tabset-1-6">Replm. Rate</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<ul>
+<li>elderly population share and elderly dependency ratio increase rapidly</li>
+<li>demographic processes: can be forecast to some extent</li>
+<li>more important: ratio economically active/inactive population</li>
+<li>main problem: <br> social trends and economic incentives for late entry into and early exit out of labor market</li>
+<li>requires changing parameters of the welfare state (standard retirement age, early retirement schemes, replacement rates, levels of contributions and benefits, <span class="math inline">\(\ldots\)</span>)</li>
+<li>much more difficult to forecast: development of labor productivity</li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<iframe src="https://ourworldindata.org/grapher/life-expectancy?yScale=log&amp;time=1952..latest&amp;country=JPN~NLD~USA~ITA" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+</iframe>
+</div>
+<div id="tabset-1-3">
+<iframe src="https://ourworldindata.org/grapher/annual-death-rates-in-different-age-groups?time=earliest..2021&amp;country=~NLD" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+</iframe>
+</div>
+<div id="tabset-1-4">
+<iframe src="https://ourworldindata.org/grapher/age-dependency-ratio-old?tab=line&amp;country=JPN~NLD~USA~ITA~CHN" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+</iframe>
+</div>
+<div id="tabset-1-5">
+<iframe src="https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable?tab=line&amp;stackMode=relative&amp;time=2005..latest&amp;country=JPN~NLD~USA~ITA~DEU" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+</iframe>
+</div>
+<div id="tabset-1-6">
+<p><img data-src="images/PensionReplacementOECD.png" style="width:75.0%"></p>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="three-pillars-of-the-retirement-system" class="slide level3">
+<h3>Three Pillars of the Retirement System</h3>
+<ol type="1">
+<li>Pay-as-you-go (PAYG) social security (SS)</li>
+<li>funded system of occupational pensions
+<ul>
+<li>defined benefit (DB)</li>
+<li>defined contribution (DC)</li>
+</ul></li>
+<li>savings and market products / private pensions and annuities</li>
+</ol>
+<ul>
+<li><p>all three pillars make income receipt (ability to finance consumption) at old age possible without the necessity to work</p></li>
+<li><p>from individual perspective: transformation of ‘resources today’ to ‘resources tomorrow’</p></li>
+<li><p>differences as regards institutional organization</p></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="pay-as-you-go-system" class="slide level3">
+<h3>Pay-as-you-go System</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Scheme</a></li><li><a href="#tabset-2-2">Overview</a></li><li><a href="#tabset-2-3">NL</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<p><img data-src="images/PAYGscheme.PNG" style="width:90.0%"></p>
+</div>
+<div id="tabset-2-2">
+<ul>
+<li>one group of individuals pays today, some other group receives today</li>
+<li>SS: employees <span class="math inline">\(\to\)</span> pensioners</li>
+<li>works well if the ratio of payers/recipients stays balanced</li>
+<li>demographic, social and medical developments
+<ul>
+<li>lower fertility rates, fewer (stable) marriages</li>
+<li>better health, longer life expectancy, lower mortality</li>
+</ul></li>
+<li>developments labor market and career patterns:<br> (changes in) early retirement, higher and later completion of formal education, more flexible work and fragmented careers, immigration</li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>SS: AOW (<em>algemene ouderdomswet</em>)</li>
+<li>benefit: universal eligibility, flat, linked to minimum wage, depends on cohabitation status, no means test</li>
+<li>buildup: 2% per year, starting 50 years before SS eligibility age (67)</li>
+<li>premiums: ca. 18% of (workers’) taxable income in first income tax bracket</li>
+<li>subsidization out of general tax revenues</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h5 id="increasing-subsidization">Increasing Subsidization</h5>
+<p><img data-src="images/aow-uitkeringen-premies.png" style="width:90.0%"></p>
+<div style="font-size: 67%;">
+<p><em>source:</em> <a href="https://www.cbs.nl/nl-nl/nieuws/2025/29/aow-voor-het-eerst-meer-dan-de-helft-bekostigd-uit-belastinggeld" class="external" target="_blank">cbs.nl</a></p>
+</div>
+</div><!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="capital-funded-system" class="slide level3">
+<h3>Capital Funded System</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Scheme</a></li><li><a href="#tabset-3-2">Overview</a></li><li><a href="#tabset-3-3">DB</a></li><li><a href="#tabset-3-4">DC</a></li><li><a href="#tabset-3-5">NL</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<p><img data-src="images/FundedScheme.PNG" style="width:90.0%"></p>
+</div>
+<div id="tabset-3-2">
+<ul>
+<li>one group ‘deposits money on an account’ today, the same group ‘receives from the same pot’ tomorrow</li>
+<li>note: same pot <span class="math inline">\(\neq\)</span> individual account (sharing within the group)</li>
+<li>occupational pensions: mandatory saving</li>
+<li>works if monies are being invested wisely</li>
+<li>however, large public pressure on pension funds to generate large returns</li>
+<li>consequence: take higher financial risks</li>
+<li>needs supervision</li>
+</ul>
+</div>
+<div id="tabset-3-3">
+<ul>
+<li>defined-benefit plan: pension benefit is determined by formula and is <em>in some sense</em> ‘fixed’</li>
+<li>contributions vary, aiming to target a particular benefit level (replacement rate relative to career income)</li>
+<li>risk is with employers (and workers), less with pensioners</li>
+<li>there are often elements of redistribution and pooled premium determination</li>
+<li>experience shows: what was meant to be ‘fixed’ got eroded through lack of indexation (to price levels or real wage levels)</li>
+</ul>
+</div>
+<div id="tabset-3-4">
+<ul>
+<li><p>defined contribution plan: contributions are fixed, benefit levels vary</p></li>
+<li><p>money is invested, market risk is with pensioners, less with workers (or employers)</p>
+<ul>
+<li>issue: individuals retiring may face large risk at the point when they are least flexible to buffer shocks</li>
+</ul></li>
+<li><p>in the limit, can be fully individualized (individual retirement accounts)</p></li>
+<li><p>high portability between jobs</p></li>
+<li><p>US: IRAs &amp; 401(k) plans; individual carries investment risk; highly flexible</p></li>
+</ul>
+</div>
+<div id="tabset-3-5">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li>occupational or professional or organizational pensions of DB type (transitioning to DC)
+<ul>
+<li>aspiring to keep real benefits fixed (indexation to CPI and wage growth)</li>
+<li>conditional on funding ratio</li>
+</ul></li>
+<li>one of largest pension fund asset/GDP ratios globally</li>
+<li>top-up model, integrated with SS (“franchise”)</li>
+<li>both employers and employees contribute</li>
+<li>benefits reflect career path, replacement rates around 70-75% (can exceed 100%)</li>
+</ul>
+</div><div class="column" style="width:42%;">
+<iframe src="https://data-viewer.oecd.org/?chartId=71987011-2042-4e3d-bb5f-3673018f7473" loading="lazy" style="width: 100%; height: 500px; border: 0px none;">
+</iframe>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="retirement-saving" class="slide level3">
+<h3>Retirement Saving</h3>
+<ul>
+<li>save money for your old day—personal responsibility</li>
+<li>‘third pillar’, much neglected until recently</li>
+<li>requires a lot of individual discipline (commitment), forward-looking behavior, and judgement</li>
+<li>often not very attractive from an individual’s income tax point of view</li>
+<li>but: individual has control about own wealth</li>
+<li>longevity risk (risk to make wrong predictions about one’s length of life)
+<ul>
+<li><span class="math inline">\(\to\)</span> private market annuitities, whole life insurance</li>
+</ul></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="comparison" class="slide level3">
+<h3>Comparison</h3>
+<ul>
+<li>all three pillars are, under ideal circumstances, in some theoretical sense, equivalent</li>
+<li>in practice: trade-off between demographic and financial risks</li>
+<li>social choice: retirement systems also redistribute</li>
+<li>pensions (annuities) insure against longevity risk, saving does not</li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="life-cycle-model" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="6.2">
+<h2><span class="header-section-number">6.2</span> Life Cycle Model</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="life-cycle-modeling-i" class="slide level3">
+<h3>Life Cycle Modeling, I</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Issue</a></li><li><a href="#tabset-4-2">Intertemporal Choice</a></li><li><a href="#tabset-4-3">Math</a></li><li><a href="#tabset-4-4">Risk of Dying</a></li><li><a href="#tabset-4-5"><span class="math inline">\(\beta\)</span> and <span class="math inline">\(1+r\)</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<ul>
+<li>income drops from high level to zero when leaving the labor market</li>
+<li>aim: avoid large swings in consumption
+<ul>
+<li>using access to financial markets (saving and borrowing), helps make consumption pattern independent of income pattern and thus independent of income fluctuations</li>
+<li>no pensions/retirement system necessary!</li>
+</ul></li>
+<li>but: uncertain length of life</li>
+</ul>
+</div>
+<div id="tabset-4-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns" style="font-size: 90%;">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/6xt7e" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:55%;">
+<ul>
+<li>allocate consumption over time <span class="math inline">\(t=0,1\)</span>: consume either today (<span class="math inline">\(c_0\)</span>, horizontal axis), or tomorrow (<span class="math inline">\(c_1\)</span>)</li>
+<li>convex indifference curves: prefer mix of <span class="math inline">\(c_0\)</span> and <span class="math inline">\(c_1\)</span></li>
+<li>budget constraint:
+<ul>
+<li>endowment: income today / tomorrow (<span class="math inline">\(y_0, y_1\)</span>)</li>
+<li>slope: <span class="math inline">\(1+r\)</span> (<span class="math inline">\(r\)</span>: interest rate on both saving and borrowing)</li>
+</ul></li>
+<li>change in <span class="math inline">\(r\)</span>: income and substitution effects</li>
+<li><span class="math inline">\(r\uparrow\)</span>: consume less today and more tomorrow</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-4-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>2-period utility function: <span class="math display">\[u(c_0,c_1) = \ln(c_0) + \ln(c_1)\]</span></li>
+<li>2-period budget constraint: <span class="math display">\[c_0 + c_1 = y_0 + y_1\]</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>prices: 1, interest rate: 0</li>
+<li>solution: <span class="math display">\[c_0=c_1= \frac{1}{2}(y_0 + y_1)\]</span> (complete smoothing)</li>
+</ul>
+</div></div>
+</div>
+<div id="tabset-4-4">
+<ul>
+<li>2-period utility: <span class="math inline">\(\qquad\qquad\qquad u(c_0,c_1) = \ln(c_0) + \ln(c_1)\)</span></li>
+<li>probability of dying between <span class="math inline">\(t=0\)</span> and <span class="math inline">\(t=1\)</span>: <span class="math inline">\(\qquad\delta\)</span></li>
+<li>expected utility <span class="math display">\[\begin{eqnarray*}
+      Eu(c_0,c_1)  &amp;=&amp; \underbrace{(1-\delta) [\ln(c_0)+\ln(c_1)]}_{\scriptsize \text{does not die}} + \underbrace{\delta [\ln(c_0)]}_{\scriptsize \text{dies}} \\
+      &amp;=&amp; \ln(c_0)+(1-\delta)\ln(c_1)
+      \end{eqnarray*}\]</span></li>
+<li>if sure to survive (<span class="math inline">\(\delta=0\)</span>), problem unchanged</li>
+<li>else (<span class="math inline">\(\delta&gt;0\)</span>) consumer <em>discounts</em> future, consume more today (while you can) / save less</li>
+</ul>
+</div>
+<div id="tabset-4-5">
+<ul>
+<li>introduce discount factor <span class="math inline">\(\beta\le 1\)</span>, interest factor: <span class="math inline">\(R\equiv 1+r\ge 1\)</span></li>
+<li>2-period utility: <span class="math inline">\(\qquad\qquad\qquad u(c_0,c_1) = \ln(c_0) + \beta \ln(c_1)\)</span></li>
+<li>2-period budget constraint: <span class="math inline">\(\qquad\qquad c_0 + c_1/R = y_0 + y_1/R\)</span></li>
+<li>combine MRS condition with budget constraint: <span class="math display">\[\begin{eqnarray*}
+      \frac{c_1}{\beta c_0} &amp;=&amp; R \\
+      c_0 + R\beta c_0/R &amp;=&amp; (1+\beta) c_0 = y_0 + y_1/R
+      \end{eqnarray*}\]</span></li>
+<li>find: <span class="math inline">\(\qquad\qquad\qquad c_0 = (y_0 + y_1/R)/(1+\beta), \quad c_1 = R\beta c_0\)</span>
+<ul>
+<li><span class="math inline">\(R\beta&lt;1\)</span>: consumption decreases over time</li>
+<li><span class="math inline">\(R\beta&gt;1\)</span>: consumption increases over time</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="life-cycle-modeling-ii" class="slide level3">
+<h3>Life Cycle Modeling, II</h3>
+<div class="panel-tabset" style="font-size: 95%;">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1"><span class="math inline">\(T&gt;2\)</span></a></li><li><a href="#tabset-5-2">Consumption Smoothing</a></li><li><a href="#tabset-5-3">Longevity Risk</a></li><li><a href="#tabset-5-4">Role of <span class="math inline">\(R\)</span></a></li></ul>
+<div class="tab-content" style="font-size: 95%;">
+<div id="tabset-5-1">
+<ul>
+<li>3-period utility function: <span class="math inline">\(u(c_0,c_1,c_2) = \ln(c_0) + \beta \ln(c_1) + \beta^2 \ln(c_2)\)</span></li>
+<li>3-period budget constraint: <span class="math inline">\(c_0 + c_1/R + c_2/R^2 = y_0 + y_1/R + y_2/R^2\)</span></li>
+<li>alternative notation (same thing) <span class="math display">\[ u(c_0,\ldots,c_2) = \sum_{t=0}^2 \beta^t \ln(c_t) \qquad \text{and}\qquad \sum_{t=0}^2 \frac{c_t}{R^t} = \sum_{t=0}^2 \frac{y_t}{R^t}\]</span></li>
+<li>straightforward extension to <span class="math inline">\(T+1\)</span> periods <span class="math display">\[u(c_0,\ldots,c_T) = \sum_{t=0}^{T} \beta^t \ln(c_t) \qquad \text{and}\qquad \sum_{t=0}^{T} \frac{c_t}{R^t} = \sum_{t=0}^{T} \frac{y_t}{R^t}\]</span> <span class="math display">\[c_t = (\beta R)^t c_0, \qquad t=1,\ldots,T \qquad \mbox{where} \quad c_0 = \frac{\sum_{t=0}^T R^{-t} y_t}{\sum_{t=0}^T \beta^{t}}\]</span></li>
+</ul>
+</div>
+<div id="tabset-5-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/tkaet" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>under <span class="math inline">\(r=0\)</span> and <span class="math inline">\(\beta=1\)</span>, total life cycle consumption = total life cycle income implies: areas are equal</li>
+<li>for <em>any</em> income profile, consumption is smooth at retirement (and anywhere else, actually)
+<ul>
+<li>open the desmos graph to see this</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-5-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/vxjpb" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>under uncertainty of how long to live, can study different scenarios with associated probabilities and calculate expected values</li>
+<li>green line gives expected consumption under the indicated probability distribution
+<ul>
+<li>open the desmos graph to see this</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-5-4">
+<ul>
+<li>interest rate very important for wealth accumulation and discounting</li>
+<li>for saving: a higher <span class="math inline">\(r\)</span> implies substitution toward future consumption (saving more attractive)</li>
+<li>for liabilities: a higher <span class="math inline">\(r\)</span> also implies a lower present discounted value (PDV) of future benefit claims <span class="math inline">\(b\)</span>
+<ul>
+<li>perpetuity (infinite horizon) of constant pension payout <span class="math inline">\(b\)</span> <span class="math display">\[PDV_{T\to +\infty} = \sum_{t=1}^{T} \frac{b}{R^t} = \frac{b}{r}\]</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="mandatory-payg-pensions" class="slide level3">
+<h3>Mandatory PAYG Pensions</h3>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">PAYG system</a></li><li><a href="#tabset-6-2">worker’s choice</a></li><li><a href="#tabset-6-3">remark</a></li><li><a href="#tabset-6-4">reasons</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<ul>
+<li><span class="math inline">\(L\)</span> workers, <span class="math inline">\(B\)</span> beneficiaries (retirees, pensioners)</li>
+<li>workers earn (constant) wage income <span class="math inline">\(w\)</span>, pensioners receive (constant) benefit <span class="math inline">\(b\)</span></li>
+<li>balanced budget of PAYG system <span class="math display">\[\theta\cdot  w \cdot L = b \cdot B\]</span>
+<ul>
+<li><span class="math inline">\(\theta\)</span> social security contribution (or tax)</li>
+</ul></li>
+<li>solve for <span class="math inline">\(b\)</span>: <span class="math display">\[b = \theta\cdot  w \cdot Z\]</span>
+<ul>
+<li><span class="math inline">\(Z\)</span> worker-to-retiree ratio (<span class="math inline">\(Z=\frac{L}{B}\)</span>)</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-6-2">
+<ul>
+<li>2 period model, worker solves <span class="math display">\[
+      \begin{align}
+      \max_{c_0,c_1,s} \;\; &amp;\ln(c_0) + \beta \ln(c_1) \nonumber \\
+            s.t. \quad &amp;c_0+s=(1-\theta)w  \label{BC1}\\
+                 &amp;c_1=R\cdot s+b \label{BC2}
+      \end{align}
+\]</span></li>
+</ul>
+<p>solution <span class="math inline">\(\qquad\qquad c_1 = (\beta R) c_0 \qquad \mbox{and} \qquad c_0=\frac{1}{1+\beta} \cdot \frac{\tilde{R}}{R} \cdot w\)</span><br> where <span class="math inline">\(\tilde{R}\)</span> is a mixed return on ‘investing’ a dollar in financial markets at <span class="math inline">\(R\)</span> or in the pension system at <span class="math inline">\(Z\)</span>: <span class="math display">\[\tilde{R} \equiv [(1-\theta)R+\theta Z] \]</span></p>
+<!-- ** NEW SLIDE ********************************************************* -->
+</div>
+<div id="tabset-6-3">
+<ul>
+<li><span class="smallcaps">Aaron</span>‘s SS paradox: ’free lunch’ when introducing SS
+<ul>
+<li>1st generation wins (they receive without paying to anyone)</li>
+<li>if implicit rate of return to PAYG (growth rate of economy, i.e.&nbsp;GDP plus population growth rates) exceeds return to capital, no other generation loses</li>
+<li>compare: golden rule of capital accumulation</li>
+</ul></li>
+<li>here:
+<ul>
+<li>PAYG is a good deal if <span class="math inline">\(Z&gt;R\)</span> (i.e.) there are many workers per retiree and this is higher than the interest rate</li>
+<li>PAYG can be a bad deal if <span class="math inline">\(Z&lt;R\)</span></li>
+<li>why is PAYG mandated with fixed <span class="math inline">\(\theta\)</span> and <span class="math inline">\(b\)</span>?</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-6-4">
+<h5 id="adverse-selection">Adverse Selection</h5>
+<ul>
+<li>pensions insure against longevity risk: live longer than expected (save too little) or die earlier (save too much)</li>
+<li>if life expectancy is heterogeneous and workers can gauge their type but pension funds cannot discriminate (pooling), then adverse selection can occur</li>
+<li><span class="math inline">\(\to\)</span> mandate</li>
+</ul>
+<h5 id="behavioral-aspects">Behavioral Aspects</h5>
+<p>(next section)</p>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="behavioral-aspects-and-policy" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="6.3">
+<h2><span class="header-section-number">6.3</span> Behavioral Aspects and Policy</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="behavioral-aspects-1" class="slide level3">
+<h3>Behavioral Aspects</h3>
+<div class="panel-tabset" style="font-size: 95%;">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Intro</a></li><li><a href="#tabset-7-2">Discounting</a></li><li><a href="#tabset-7-3">Graph</a></li></ul>
+<div class="tab-content" style="font-size: 95%;">
+<div id="tabset-7-1">
+<ul>
+<li>there can be behavioral reaons for why gov’t forces people to save through a mandated retirement system</li>
+</ul>
+<ol type="1">
+<li>uncertainties are paramount, the retirement planning task is too complex</li>
+<li>information is not (readily) available, calculation is technically challenging, the task is onerous and mentally overwhelming</li>
+<li>individuals are myopic (present-biasedness: discount the future too much)</li>
+<li>individuals are time-inconsistent (hyperbolic discounters)</li>
+<li>individuals cannot commit to a plan</li>
+</ol>
+</div>
+<div id="tabset-7-2">
+<p>consider 3-period utility fn: <span class="math inline">\(u(c_0,c_1,c_2) = \ln(c_0) + \ln(c_1) + \ln(c_2)\)</span></p>
+<ul>
+<li><strong>exponential discounting</strong>: weight <span class="math inline">\(\beta\)</span> for per-period utility <span class="math display">\[u(c_0,c_1,c_2) = \beta^0 \ln(c_0) + \beta^1 \ln(c_1) + \beta^2 \ln(c_2) \]</span> with <span class="math inline">\(\beta&lt;1\)</span>, weights get smaller over time, <span class="math inline">\(\beta^0 &gt; \beta^1 &gt; \beta^2 &gt; \ldots\)</span></li>
+<li><strong>(quasi-)hyperbolic discounting</strong>: extra weight <span class="math inline">\(\kappa\)</span> for future utility <span class="math display">\[u(c_0,c_1,c_2)  = \beta^0 \ln(c_0) + \kappa\left[\beta^1 \ln(c_1) + \beta^2 \ln(c_2)\right] \]</span></li>
+<li>hyperbolic discounting helps modeling <strong>time-inconsistent</strong> behavior (today make different plans for future consumption than what is optimal when viewed from tomorrow’s perspective)</li>
+<li>people willingly don’t save enough (according to their own goals)</li>
+</ul>
+</div>
+<div id="tabset-7-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<iframe src="https://edu.nl/7e8ay" width="500" height="500" style="border: 1px solid #ccc" frameborder="0"></iframe>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<ul>
+<li><p>graphs shows: from today’s perspective <span class="math inline">\(t=0\)</span>, how much is a dollar worth that you receive in <span class="math inline">\(t\)</span> years?</p></li>
+<li><p>green line: exponential discounting</p></li>
+<li><p>yellow line: hyperbolic discounting</p></li>
+<li><p>blue line: quasi-hyperbolic discounting</p></li>
+<li><p>exponential is time-consistent:</p>
+<ul>
+<li>today, $1 received in 5 years is $ <span class="math inline">\(\frac{1}{3}\)</span></li>
+<li>in 5 years, $1 received in 10 years (5 years from then) is $ <span class="math inline">\(\frac{1}{3}\)</span></li>
+</ul></li>
+<li><p>(quasi)hyperbolic is inconsistent</p></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="save-more-tomorrow-smart-program" class="slide level3">
+<h3>Save More Tomorrow (SMarT) Program</h3>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Setup</a></li><li><a href="#tabset-8-2">Results</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<ul>
+<li>Benartzi and Thaler (2004, JPE)</li>
+<li>SMarT: employer-based saving plan</li>
+<li>The plan provides two commitments:
+<ul>
+<li>contributions to retirement savings are automatic</li>
+<li>the rate of contribution increases as the employee’s salary increases.</li>
+</ul></li>
+<li>Second, enrollment is voluntary, implying those who enroll demonstrate a demand for commitment.</li>
+<li>Third, the commitment is soft: employees can withdraw from the plan at any time without incurring a cost beyond filling out a form.</li>
+</ul>
+</div>
+<div id="tabset-8-2">
+<ul>
+<li>Benartzi and Thaler’s results strongly support the joint hypothesis that people demand commitment and that soft commitments are effective
+<ul>
+<li>78% of those offered the program enrolled, indicating strong demand for the commitment</li>
+<li>after 4 pay raises, 80% of those individuals were still enrolled;</li>
+<li>increased savings rates (a 1.5% increase in savings rates)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="behavioral-policy" class="slide level3">
+<h3>Behavioral Policy</h3>
+<ul>
+<li>complex decisions relating far into the future tend to be postponed
+<ul>
+<li>laziness, procrastination, lack of self-control</li>
+<li>calculations involving mortality probabilities, tax advantages, and associated expected values and variances are difficult</li>
+</ul></li>
+<li>social norms matter a lot (to leave work as early as possible or to contribute to savings schemes)</li>
+<li>changes of default (automatic enrolment), but also drastic changes (abolitions of financial incentives for employers to offer early retirement) can work, but good to have implementation done through employers</li>
+<li>unclear: welfare effects (is early retirement/saving good, bad, or non-optimal?)</li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="pension-reform" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="6.4">
+<h2><span class="header-section-number">6.4</span> Pension Reform</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="policy-issues-and-pension-reforms-in-nl" class="slide level3">
+<h3>Policy Issues and Pension Reforms in NL</h3>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Issues</a></li><li><a href="#tabset-9-2">Pension Reforms</a></li><li><a href="#tabset-9-3">ER Reform</a></li><li><a href="#tabset-9-4">SRA Reform</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<ul>
+<li>double-edged population aging
+<ul>
+<li>increasing number of retirees relative to workers</li>
+<li>the old live longer</li>
+<li>higher life expectancy requires a longer working life</li>
+</ul></li>
+<li>however: issue of deteriorating health toward the end of the working life cycle</li>
+</ul>
+</div>
+<div id="tabset-9-2">
+<ul>
+<li>2004 abolition of final pay pension determination within DB system</li>
+<li>2006 abolition of financial incentives to make use of early retirement (ER)</li>
+<li>2013 connect standard retirement age (SRA) to (increasing) life expectancy</li>
+<li>2023 new Pension Act (changeover before 2028)
+<ul>
+<li>shift towards DC structure</li>
+<li>abolition of funding ratio</li>
+<li>more flexibility for pensioners, e.g.&nbsp;(limited) possibilities for taking out lump sum upon retirement</li>
+<li>more flexibility for workers that change jobs or become self-employed</li>
+<li>removes some of intergenerational tensions</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-9-3">
+<p><img data-src="images/arbeidsparticipatie_cbs_2021.png" style="width:70.0%"></p>
+<div style="font-size: 67%;">
+<p><em>data source:</em> <a href="https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83294NED/table?dl=17263" class="external" target="_blank">opendata.cbs.nl</a></p>
+</div>
+</div>
+<div id="tabset-9-4">
+<p><img data-src="images/Rabate2024F3A.png" style="width:55.0%"></p>
+<div style="font-size: 67%;">
+<p><em>source:</em> Rabate et al, AEJ-EP 2024, Fig.3A</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="conclusions" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="6.5">
+<h2><span class="header-section-number">6.5</span> Conclusions</h2>
+
+</section>
+<section id="summary" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>pension systems often multilayered integrated retirement programs involving state-sponsored SS and private, possibly mandated occupational or work-related pensions</li>
+<li>financing: distinguish PAYG, DB and DC types</li>
+<li>rationale for gov’t intervention is either market failure (often: asymmetric information), distributional concern, or paternalism</li>
+<li>mandated participation tries to achieve:
+<ul>
+<li>avoid premium-inflating adverse selection</li>
+<li>myopic and time-inconsistent consumers are ‘forced to save’</li>
+</ul></li>
+<li>as other annuities, pensions also help mitigating longevity risk</li>
+<li>behavioral theory argues that lack of self-control leads people to avoid looking into complex pension plan decisions</li>
+<li>changing defaults or subsidization increases pension saving, it may even increase total saving (no crowding out)</li>
+</ul>
+
+
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
+</section>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/VUnobg.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>BSc Course • Public Economics • © 2025-26 Stefan Hochguertel</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
