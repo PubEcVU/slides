@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/mathjax3tags/mathjax3.js"></script>
+<script src="site_libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.21">
+
+  <meta name="author" content="Stefan Hochguertel">
+  <title>Public Economics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-024771c6d174ed544a608708b7da6505.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/starlings.jpg" data-background-opacity="0.67" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Public Economics</h1>
+  <p class="subtitle">BSc Course</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Stefan Hochguertel 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:s.hochguertel@vu.nl">s.hochguertel@vu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Vrije Universiteit Amsterdam
+          </p>
+    </div>
+</div>
+
+  <p class="date">Monday, February 23, 2026</p>
+</section>
+<section>
+<section id="commodity-taxation-subsidization" class="title-slide slide level1 center" data-background-color="#049baa" data-number="7">
+<h1><span class="header-section-number">7</span> Commodity Taxation &amp; Subsidization</h1>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+<section id="introduction" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="7.1">
+<h2><span class="header-section-number">7.1</span> Introduction</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="introduction-taxation" class="slide level3">
+<h3>Introduction Taxation</h3>
+<ul>
+<li><p>important purpose: finance gov’t expenditure (tax revenue)</p></li>
+<li><p>intended and unintended allocative and distributive effects</p>
+<ul>
+<li>intended allocative: <span class="smallcaps">Pigou</span> tax, ‘sin’ tax</li>
+<li>unintended allocative: excess burden</li>
+<li>intended distributive: income redistribution</li>
+<li>unintended(?) distributive: tax incidence</li>
+<li>joint with expenditure: macroeconomic effects of stabilization</li>
+</ul></li>
+<li><p>optimal taxation: given a certain tax revenue goal of gov’t, how to minimize the welfare loss from taxation?</p></li>
+<li><p>derive ‘optimal tax rules’</p></li>
+<li><p>in what follows: consider market for one or two commodities (prices, quantities)</p></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="taxes-and-their-market-consequences" class="slide level3">
+<h3>Taxes and Their Market Consequences</h3>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Tax Distortion: Intuition</a></li><li><a href="#tabset-1-2">Aspects</a></li><li><a href="#tabset-1-3">Results</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>consumer: yes-no decision of buying 1 apple</p>
+<ul>
+<li>willing to pay: 1.20 EUR</li>
+<li>shop: willing to sell at 1.00 EUR <br> <span class="math inline">\(\to\)</span> economically useful transaction proceeds, welfare gain</li>
+<li>tax revenue: 0</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>enter the gov’t: tax 25%</p>
+<p><br></p>
+<ul>
+<li>at 1.25 EUR, consumer does not buy, shop does not sell</li>
+<li>transaction stalled, no welfare gain</li>
+<li>tax revenue: 0</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+<p><span class="math inline">\(\to\)</span> same tax revenue, no welfare gain</p>
+</div>
+<div id="tabset-1-2">
+<ul>
+<li>commodity taxation targets consumption goods</li>
+<li>absent lump-sum taxes, all taxation is distortionary, implying <em>tax wedge</em>:<br> price consumers pay <span class="math inline">\(p^c\)</span> differs from price producers obtain <span class="math inline">\(p^p\)</span></li>
+<li>distinguish two core forms of commodity taxation
+<ul>
+<li>ad valorem (or, sales) tax: a percentage <span class="math inline">\(t\)</span> on price-weighted volume of trade
+<ul>
+<li>price <span class="math inline">\(p^c_t = p^p_t \cdot (1+t)\)</span></li>
+</ul></li>
+<li>unit (or, specific) tax: a money amount <span class="math inline">\(\tau\)</span> added to the price
+<ul>
+<li>price <span class="math inline">\(p^c_\tau = p^p_\tau +\tau\)</span></li>
+</ul></li>
+</ul></li>
+<li>deadweight loss (DWL; or <em>excess burden</em>): welfare loss from reduced economic activity</li>
+<li>tax incidence: question of pass-through</li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<ul>
+<li><p>consequences depend primarily on price (or tax rate) elasticities of demand and supply</p></li>
+<li><p>economic incidence <span class="math inline">\(\neq\)</span> statutory or legal incidence</p></li>
+<li><p>neutrality results</p>
+<ul>
+<li>form of taxation (ad valorem/sales or unit/specific tax) does not matter (given tax revenue)</li>
+<li>effects of tax rate changes are symmetric for tax increase and decreases</li>
+<li>same analytical framework for subsidies (negative taxes)</li>
+</ul></li>
+<li><p>differences according to market structure</p></li>
+<li><p>distinguish introduction vs increasing of tax</p></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="partial-equilibrium-market-level-analysis" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="7.2">
+<h2><span class="header-section-number">7.2</span> Partial Equilibrium Market-Level Analysis</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="incidence" class="slide level3">
+<h3>Incidence</h3>
+<ul>
+<li>burden falls on both producers and consumers according to <em>relative</em> price elasticities</li>
+</ul>
+<div title="Elasticities">
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Elasticities</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="math display">\[
+\eta^D = \frac{\mbox{d} D(p)}{\mbox{d} p}\cdot \frac{p}{Q};
+\qquad
+\eta^S = \frac{\mbox{d} S(p)}{\mbox{d} p}\cdot \frac{p}{Q}
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div title="Core Result">
+<div class="callout callout-important no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Core Result</strong></p>
+</div>
+<div class="callout-content">
+<p>less elastic side of the market is more exposed to the tax-induced price change <span class="math display">\[\frac{\text d p^p_\tau/\text d \tau}{\text d p^c_\tau/\text d \tau} = \frac{\eta^D}{\eta^S}\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="base-diagrams-for-competitive-markets" class="slide level3">
+<h3>Base Diagrams For Competitive Markets</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Unit tax</a></li><li><a href="#tabset-2-2">Subsidy</a></li><li><a href="#tabset-2-3">Ad Valorem Tax</a></li><li><a href="#tabset-2-4">Elasticity</a></li><li><a href="#tabset-2-5"><span class="smallcaps">Laffer</span> Curve</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/gxfvm" width="600" height="400" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>unit tax levies <span class="math inline">\(\tau\)</span> dollars per unit of the good</li>
+<li>parallel shift of demand or supply (marginal cost) curve</li>
+<li>tax rate change affects
+<ul>
+<li>tax wedge <span class="math inline">\(p^p_\tau \neq p^c_\tau\)</span></li>
+<li>tax revenue <span class="math inline">\(T(\tau)\)</span> (green)</li>
+<li>and deadweight loss <span class="math inline">\(DWL(\tau)\)</span> (red; aka <span class="smallcaps">Harberger</span> triangle)</li>
+</ul></li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/mkxea" width="600" height="400" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>subsidies are negative taxes</li>
+<li>producer <span class="math inline">\(p^p_\tau\)</span> and consumer price <span class="math inline">\(p^c_\tau\)</span> swap position compared to tax</li>
+<li>DWL obtains because change in consumer and producer surplus does not compensate fully for the amount of subsidy paid by gov’t</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-3">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/c47nu" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>ad valorem taxes multiply the willingness to pay or marginal cost with a factor <span class="math inline">\(1+t\)</span></li>
+<li>sales taxes are typical ad valorem taxes (percentage on the (sales) value)</li>
+<li>rotation of demand or supply (marginal cost) curve around the intersection with quantity axis</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/k4kry" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>define price elasticities of demand and supply in before-tax equilibrium <span class="math inline">\(({p_0},{Q_0})\)</span></li>
+<li>relative consumer and producer prices change inversely proportionally to elasticities when tax rate changes</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+<div id="tabset-2-5">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/f6bge" width="500" height="500" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>diagram generated from market demand and supply curves <span class="math inline">\(Q=D(p)=1-p\)</span> and <span class="math inline">\(Q=S(p)=p\)</span> at unit tax (rate <span class="math inline">\(\tau\)</span>)</li>
+<li>both tax revenue <span class="math inline">\(T(\tau)\)</span> and <span class="math inline">\(DWL(\tau)\)</span> are quadratic in <span class="math inline">\(\tau\)</span></li>
+<li><span class="math inline">\(\tau=0.8\)</span> delivers the same tax revenue as <span class="math inline">\(\tau=0.2\)</span> but is associated with a DWL that is 32 times higher</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="deadweight-loss-and-elasticities" class="slide level3">
+<h3>Deadweight Loss and Elasticities</h3>
+<ul>
+<li>change in DWL depends on elasticities and tax rate as follows: <span id="eq-DWLela1"><span class="math display">\[
+\Delta DWL = 0.5 \cdot (\text d \tau)^2 \cdot   \color{blue}{\frac{\color{black}{\eta^D} \eta^S}{\eta^S - \eta^D}}\cdot Q_0/p_0
+\tag{1}\]</span></span>
+<ul>
+<li>DWL rises more than proportionally with the tax rate (quadratic)</li>
+</ul></li>
+<li>for introduction of a tax, i.e., <span class="math inline">\(\text d \tau = \tau\)</span>, and under a flat supply curve<sup>1</sup> <span id="eq-DWLela2"><span class="math display">\[
+DWL = 0.5 \cdot \tau^2 \cdot  \eta^D \cdot Q_0/p_0
+\tag{2}\]</span></span>
+<ul>
+<li>DWL quadratic in tax rate and proportional to price elasticity of demand</li>
+</ul></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="math inline">\(\displaystyle \lim_{\eta^S \to \infty} \color{blue}{\frac{\eta^S}{\eta^S-\eta^D}} = 1\)</span></p></li></ol></aside></section>
+<section id="base-diagrams-for-monopoly" class="slide level3">
+<h3>Base Diagrams For Monopoly</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<ul>
+<li>there is an initial DWL of monopoly in the no-tax equilibrium</li>
+<li>tax-induced shift in demand induces production where <span class="math inline">\(MC(Q_\tau)=MR(Q_\tau)\)</span>, and a price wedge <span class="math inline">\(p_\tau^c\)</span> v <span class="math inline">\(p_\tau^p\)</span>, with smaller profit</li>
+<li>under taxation, the DWL will grow much more, since an existing DWL will be supplemented with a tax-DWL (distortion-upon-distortion)</li>
+<li>for unit tax at rate <span class="math inline">\(\tau\)</span>, <span id="eq-DWLela3"><span class="math display">\[
+DWL = 0.5\cdot \tau^2\cdot \eta^D_p \frac{Q_0}{(\eta^D_p-1)^2}
+\tag{3}\]</span></span></li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:50%;">
+<iframe src="https://edu.nl/6qgt6" width="550" height="550" style="border: 1px solid #ccc"></iframe>
+</div><!-- END multicolumn setup ................................................. -->
+</div>
+</section>
+<section id="tax-shifting" class="slide level3">
+<h3>Tax Shifting</h3>
+<ul>
+<li>in noncompetitive market structures, tax shifting as a statutory tax payer passing through a tax burden to the other side of the market cannot necessarily be characterized through a simple comparison of elasticities</li>
+<li>for instance, if the monopolist were the statutory taxpayer, some, but not all of the burden, would be shifted to the consumers</li>
+<li>tax incidence: firm carries positive tax burden, despite <span class="math inline">\(MC=0\)</span> (<strong>undershifting</strong>)</li>
+<li>depending on the shape of the demand function, <strong>overshifting</strong> may occur (consumer price rises much more with the tax than producer price)</li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="consumer-level-analysis-with-two-markets" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="7.3">
+<h2><span class="header-section-number">7.3</span> Consumer-Level Analysis with Two Markets</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="consumer-level-analysis" class="slide level3">
+<h3>Consumer-Level Analysis</h3>
+<ul>
+<li>consumer choice diagram, on axes: quantities of 2 goods, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>; only <span class="math inline">\(x\)</span> will be taxed</li>
+<li>partial taxes are distortionary because of substitution effects:<br> <span class="math inline">\(\Delta\)</span>tax rates <span class="math inline">\(\to\)</span> <span class="math inline">\(\Delta\)</span>relative prices <span class="math inline">\(\to\)</span> behavioral response</li>
+<li>comparison: non-distortionary (or lump-sum) tax, holding constant utility level<sup>1</sup> <sup>2</sup></li>
+</ul>
+<div title="Excess Burden at Individual Level">
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Excess Burden at Individual Level</strong></p>
+</div>
+<div class="callout-content">
+<ol type="1">
+<li>foregone tax revenue due to partial taxation, or</li>
+<li>tax burden that is higher than necessary</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+<aside><ol class="aside-footnotes"><li id="fn2"><p>disregarding supply side</p></li><li id="fn3"><p>concepts involve <em>equivalent</em> (EV) or <em>compensating variation</em> (CV)</p></li></ol></aside></section>
+<section id="foregone-tax-revenue-due-to-partial-taxation" class="slide level3">
+<h3>Foregone Tax Revenue due to Partial Taxation</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<div title="Excess Burden (Case 1)">
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Excess Burden (Case 1)</strong></p>
+</div>
+<div class="callout-content">
+<p>Tax revenue not received due to distortionary taxation. Using non-distortionary taxes would have led to more tax revenue, holding constant the welfare level of the individual.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>based on EV (compares budgets on after-tax indifference curve)</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<iframe src="https://edu.nl/mquhv" width="600" height="600" style="border: 1px solid #ccc"></iframe>
+</div><!-- END multicolumn setup ................................................. -->
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="tax-burden-that-is-higher-than-necessary" class="slide level3">
+<h3>Tax Burden that is higher than Necessary</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:45%;">
+<div title="Excess Burden (Case 2)">
+<div class="callout callout-warning no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Excess Burden (Case 2)</strong></p>
+</div>
+<div class="callout-content">
+<p>Extra amount of money that the government would have had to spend if it were to restore welfare by means of a non-distortionary subsidy when the relative prices were determined by the distortionary tax.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>based on CV (compares budgets on before-tax indifference curve)</li>
+</ul>
+</div><div class="column" style="width:55%;">
+<iframe src="https://edu.nl/kegh6" width="600" height="600" style="border: 1px solid #ccc"></iframe>
+</div><!-- END multicolumn setup ................................................. -->
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="lessons-learned" class="slide level3">
+<h3>Lessons Learned</h3>
+<ul>
+<li>partial taxes are distortionary since they induce a change of behavior: <br> do a thing you otherwise would not have, even though you’re being compensated for the change in purchasing power (income effect)</li>
+<li>compensated demand function matters for evaluation of welfare effects
+<ul>
+<li>substitution effect decisive for efficiency, even if counterbalanced by an income effect of the same size</li>
+<li>no excess burden if goods are perfect complements</li>
+</ul></li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="welfare-enhancing-taxes" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="7.4">
+<h2><span class="header-section-number">7.4</span> Welfare-Enhancing Taxes</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="externalities-illustrated" class="slide level3">
+<h3>Externalities Illustrated</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Definition</a></li><li><a href="#tabset-3-2">Graph</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div title="Externality">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Externality</strong></p>
+</div>
+<div class="callout-content">
+<p>effect of own economic activity on somebody else’s without compensation payments that are accounted for in market prices</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>externalities are essentially unintended spillover effects</li>
+<li>affect non-market participants (or ‘bystanders’)</li>
+<li>externalities can
+<ul>
+<li>be negative, positive, and/or interdependent</li>
+<li>affect production and/or consumption</li>
+</ul></li>
+<li>here: firm pollutes while producing, consumers (as bystanders) suffer marginal damages from the pollution—which increases with production</li>
+</ul>
+</div>
+<div id="tabset-3-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:40%;">
+ <iframe src="https://edu.nl/u7v64" width="450" height="650" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>rational behavior: do not take into account social cost/benefits, only private cost/benefits</li>
+<li>in market equilibrium: <span class="math display">\[\text{marg. private cost} = \text{marg. private benefits}\]</span> will have too much of a negative externality</li>
+<li>policy solutions try to restore optimal allocation: <span class="math display">\[\text{marg. social cost} = \text{marg. social benefits}\]</span></li>
+<li>this does <strong>not</strong> imply: abolish all activity with externalities; even at optimal allocation there will be some level of externality present</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="policy-pigou-tax" class="slide level3">
+<h3>Policy: Pigou Tax</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Idea</a></li><li><a href="#tabset-4-2">Graph</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div title="[Pigov]{.smallcaps}ian Tax">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span class="smallcaps">Pigov</span>ian Tax</strong></p>
+</div>
+<div class="callout-content">
+<p>Tax per unit on a polluting producer’s output equal to the marginal damage it causes at the socially optimal level of production. Concept named after <span class="smallcaps">A.C. Pigou</span> (1877–1959).</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>i.e., introduce a price on the externality that the polluter has to pay</li>
+<li><span class="alert">align</span> marginal social cost of society and marginal private cost of the polluter<br><br></li>
+<li>main problem: implementation
+<ul>
+<li>get polluters and pollutees to truthfully reveal their private cost and benefits so that taxes can be set optimally</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-4-2">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe src="https://edu.nl/kueex" width="500" height="650" style="border: 1px solid #ccc"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Optimal tax increases MPC and reduces production such that the welfare loss from the externality is exactly removed</li>
+<li>Optimal abatement subsidy increases MPC accordingly and is paid on pollution reduction exceeding a prespecified benchmark (i.e., marginal value of not abating carries a cost of foregone subsidy)</li>
+</ul>
+</div></div>
+<!-- END multicolumn setup ................................................ -->
+</div>
+</div>
+</div>
+</section>
+
+<section id="conclusions-and-summary" class="title-slide slide level2 unnumbered center" data-background-color="#acfaf7">
+<h2>Conclusions and Summary</h2>
+
+</section>
+<section id="summary" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li>taxes are the main financing tool for gov’t expenditure</li>
+<li>they have desirable, but also undesirable consequences</li>
+<li>tax incidence: the relative inelastic side of the market bears the brunt of the tax burden</li>
+<li>all taxation is distortionary</li>
+<li>excess burdens are quadratic in tax rates
+<ul>
+<li>size of DWL depends on price elasticities of supply and (compensated) demand</li>
+<li>form of taxation (ad valorem or unit tax) does not matter (given tax revenue)</li>
+<li>effects of tax rate changes are symmetric for tax increases and decreases</li>
+</ul></li>
+<li>in noncompetitive market structures, taxes compound the welfare loss of pre-existing distortions</li>
+<li>substitution effects are the underlying causes of the inefficiencies</li>
+<li>welfare-enhancing taxation can result when tackling externalities</li>
+</ul>
+
+
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
+</section>
+</section>
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/VUnobg.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>BSc Course • Public Economics • © 2025-26 Stefan Hochguertel</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
