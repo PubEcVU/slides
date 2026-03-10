@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea1d7ac60288e0f1efdbc993fd8432ae.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/mathjax3tags/mathjax3.js"></script>
+<script src="site_libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.21">
+
+  <meta name="author" content="Stefan Hochguertel">
+  <title>Public Economics</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-024771c6d174ed544a608708b7da6505.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="images/starlings.jpg" data-background-opacity="0.67" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title">Public Economics</h1>
+  <p class="subtitle">BSc Course</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Stefan Hochguertel 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:s.hochguertel@vu.nl">s.hochguertel@vu.nl</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Vrije Universiteit Amsterdam
+          </p>
+    </div>
+</div>
+
+  <p class="date">Wednesday, March 11, 2026</p>
+</section>
+<section>
+<section id="tax-avoidance-competition-amnesties-and-coordination" class="title-slide slide level1 center" data-background-color="#049baa" data-number="12">
+<h1><span class="header-section-number">12</span> Tax Avoidance, Competition, Amnesties and Coordination</h1>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+<section id="tax-avoidance-and-tax-competition" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="12.1">
+<h2><span class="header-section-number">12.1</span> Tax Avoidance and Tax Competition</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="tax-avoidance-the-problem" class="slide level3">
+<h3>Tax Avoidance: The Problem</h3>
+<ul>
+<li><p>tax avoidance: legally substituting away from taxed activities</p></li>
+<li><p>search for loopholes and violating the spirit, while abiding by the letter of the law</p></li>
+<li><p>especially common with multinational enterprises (MNEs)</p>
+<ul>
+<li><p>taking advantage of legal opportunities to minimize tax liability;</p></li>
+<li><p>transactions and constructions designed to reduce tax liability;</p></li>
+<li><p>wholly artificial arrangements, lack of economic substance;</p></li>
+</ul></li>
+<li><p>popular:</p>
+<ul>
+<li><p>transfer pricing on intra-group transactions for profit shifting to low-tax jurisdictions</p></li>
+<li><p>brass plate/letterbox companies/conduit companies/shell corporations</p>
+<ul>
+<li><p>12,400 conduit companies in NL, estimated 4,500b euros flow per year</p></li>
+<li><p>benefiting from 100 bilateral tax treaties with about 100 countries</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="us-multinationals-taxation-of-profit" class="slide level3">
+<h3>US Multinationals’ Taxation of Profit</h3>
+<div class="center-h">
+<p><a href="images/profitshifting_NYT20190206.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="images/profitshifting_NYT20190206.jpg" style="width:45.0%"></a></p>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="statutory-corporate-tax-rates" class="slide level3">
+<h3>Statutory Corporate Tax Rates</h3>
+<iframe src="https://ourworldindata.org/grapher/statutory-corporate-income-tax-rate?country=FRA~DEU~GBR~NLD~IRL&amp;tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="statutory-vs-effective-corporate-tax-rates" class="slide level3">
+<h3>Statutory vs Effective Corporate Tax Rates</h3>
+
+<!-- ** NEW SUBSECTION ********************************************************* -->
+<img data-src="images/EUTaxF5.jpg" class="r-stretch"></section>
+
+<section id="modeling-tax-competition" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="12.2">
+<h2><span class="header-section-number">12.2</span> Modeling Tax Competition</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="small-open-economy-against-row" class="slide level3">
+<h3>Small Open Economy Against ROW</h3>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Setting</a></li><li><a href="#tabset-1-2">Result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<ul>
+<li>if taxes are levied on activities that are internationally highly mobile, then the tax base may erode in response to tax rates that are relatively high compared to other countries</li>
+<li>countries compete for revenue</li>
+<li>important: small open economies cannot influence the net-of-tax return to capital</li>
+<li>mechanism
+<ul>
+<li>small country wants to increase capital tax revenue</li>
+<li>if capital moves out, labor productivity may decrease</li>
+<li>income to workers (residents) decreases more than capital tax revenue rises</li>
+<li>erosion of political support for capital income tax</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<ul>
+<li><p>assume homothetic production function <span class="math inline">\(Q = F(K,L)\)</span> and devide everything by labor, obtaining <span class="math inline">\(q=f(k)\qquad\)</span> (i.e., <span class="math inline">\(\qquad q=Q/L\)</span>, <span class="math inline">\(k=K/L\)</span>)</p></li>
+<li><p>setting tax <span class="math inline">\(t\)</span> will result in capital to move out until <span class="math display">\[ \underbrace{f'(k) - t}_{\text{domestic net return to capital}}  =  \underbrace{\rho}_{\text{world return to capital}}\]</span></p></li>
+<li><p>net income of workers (residents) <span class="math display">\[\underbrace{f(k)}_{\text{production}} -  \underbrace{f'(k)\cdot k}_{\text{capital~inc.}} + \underbrace{tk}_{\text{transfer}} = f(k) - \rho k\]</span></p></li>
+<li><p>this will be maximized when <span class="math inline">\(t=0\)</span> as else <span class="math inline">\(k\)</span> flows out</p></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="strategic-tax-competition-among-equals" class="slide level3">
+<h3>Strategic Tax Competition Among Equals</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Setting</a></li><li><a href="#tabset-2-2">Tax Wedge</a></li><li><a href="#tabset-2-3">Best Responses</a></li><li><a href="#tabset-2-4">Equilibrium</a></li><li><a href="#tabset-2-5">Upshot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<ul>
+<li><p>now consider a world of two countries with a fixed supply of capital <span class="math inline">\(\bar{k} = k_1+k_2\)</span> and the same production technology <span class="math inline">\(f()\)</span>; each country sets its own tax rate <span class="math inline">\(t_i, i=1,2\)</span></p></li>
+<li><p>arbitrage condition <span class="math display">\[\label{eq:taxarbitrage}
+        \underbrace{f'(k_1) - t_1}_{\text{net return to capital ctr 1}}  =  \underbrace{f'(\bar{k}-k_1) - t_2}_{\text{net return to capital ctr 2}}\]</span></p></li>
+<li><p><span style="color: lightgray">(also holds for country specific <span class="math inline">\(f()\)</span>s)</span></p></li>
+</ul>
+</div>
+<div id="tabset-2-2">
+<div class="center-h">
+<p><img data-src="images/taxcomp_wedge.jpg" style="width:40.0%"></p>
+</div>
+</div>
+<div id="tabset-2-3">
+<ul>
+<li>each country maximizes net income of its residents taking into account capital flows resulting from tax changes, e.g.&nbsp;<span class="math display">\[\max_{t_1} y_1 = f(k_1) - f'(k_1)\cdot k_1 + t_1k_1\]</span></li>
+<li><span class="math inline">\(k_1\)</span> is a function of tax rates, and so is <span class="math inline">\(y_1=y_1(t_1,t_2)\)</span></li>
+<li><span class="smallcaps">Nash</span> strategy choice; best response function (taking <span class="math inline">\(t_2\)</span> as given), <span class="math display">\[\frac{\text{d}y_1(t_1,t_2)}{\text{d}t_1} = 0\]</span></li>
+<li>best responses per country <span class="math display">\[t_1 = r_1(t_2) \qquad t_2 = r_2(t_1)\]</span></li>
+</ul>
+</div>
+<div id="tabset-2-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>equilibrium condition: <span class="math inline">\(t_1^\star = r_1(t_2^\star)\)</span> and <span class="math inline">\(t_2^\star= r_2(t_1^\star)\)</span></li>
+<li>tax rates are strategic complements: lowering <span class="math inline">\(t_2\)</span> attracts capital away from country 1 which in response cuts <span class="math inline">\(t_1\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/taxcomp_equil.jpg"></p>
+</div></div>
+<!-- multicolumn setup .................................................... -->
+</div>
+<div id="tabset-2-5">
+<ul>
+<li>cooperatively increasing taxes is beneficial to both countries: <br> countries can maximize the net income of their residents by fully taxing the mobile factor</li>
+<li><span class="smallcaps">Nash</span> equilibrium involves inefficiently low taxes; loss in potential welfare is the efficiency cost of fiscal competition</li>
+<li>similar but not identical to prisoner’s dilemma (int’l tax harmonization as common good)</li>
+<li>equilibrium tax rates may not be zero (race to the bottom stays above zero taxation)</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="unequal-neighbours" class="slide level3">
+<h3>Unequal Neighbours</h3>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Size</a></li><li><a href="#tabset-3-2">Result</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<ul>
+<li><p>analysis so far abstracted from a number of relevant variables: difference in country size, production technologies, factor endowments etc.</p></li>
+<li><p>in addition, small countries may gain at the expense of larger countries</p></li>
+<li><p>key insight: with fixed world supply of capital <span class="math inline">\(\bar{k}\)</span>, the capital market clearing condition depends on the population shares <span class="math inline">\(s\)</span> (of the bigger country 1) and <span class="math inline">\(1-s\)</span> (smaller country 2), <span class="math display">\[sk_1(t_1, t_2) + (1 - s)k_2(t_1, t_2) = \bar{k}.\]</span></p></li>
+<li><p>arbitrage condition (<a href="#/eq:taxarbitrage" data-reference-type="ref" data-reference="eq:taxarbitrage">[eq:taxarbitrage]</a>) changes to <span class="math display">\[f'(k_1) - t_1 = f'\left(\frac{\bar{k}}{1 - s}-\frac{sk_1(t_1, t_2)}{1 - s}\right) - t_2\]</span></p></li>
+</ul>
+</div>
+<div id="tabset-3-2">
+<ul>
+<li><p>differential calculus shows: both countries face a capital outflow after an increase in their own tax rate, but this outflow is less severe in the large country</p></li>
+<li><p>the larger country 1 faces a less elastic tax base and thereby chooses a higher tax rate than the smaller country, so in equilibrium <span class="math inline">\(t_1 &gt; t_2\)</span></p></li>
+<li><p>the smaller country 2 employs more capital <span class="math inline">\((k_2 &gt; k_1)\)</span> and increases its per capita income; it is possible that the small country is better off with than without tax competition</p></li>
+<li><p>corollary: with # countries <span class="math inline">\(\uparrow\)</span>, more intense competition and lower equilibrium tax rates</p></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="tax-disclosure-and-amnesty-programs" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="12.3">
+<h2><span class="header-section-number">12.3</span> Tax Disclosure and Amnesty Programs</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="voluntary-disclosure-programs-vdps" class="slide level3">
+<h3>Voluntary Disclosure Programs (VDPs)</h3>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Issue</a></li><li><a href="#tabset-4-2">Critique</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<ul>
+<li><p><span class="math inline">\(\ge 38\)</span> countries have ‘permanent voluntary disclosure programs’—forgiving those that come clean and report their evaded taxes of the past</p></li>
+<li><p>typically, not open to those already under investigation</p></li>
+<li><p>typically, there is <span class="alert">no fine</span></p></li>
+<li><p>Why is this done?</p></li>
+<li><ul>
+<li><p>gov’t saves administration, audit and detection cost</p></li>
+<li><p>permanent repatriation of wealth from tax havens</p></li>
+<li><p>complementary to whistleblower information</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-4-2">
+<ul>
+<li><p>Langenmayr (2017, JPubE):</p>
+<ul>
+<li><p>VDPs may increase number of tax evaders since they can turn themselves in later, unpunished</p></li>
+</ul></li>
+<li><p>Beer and De Mooij (2024, Ec Analysis &amp; Pol):</p>
+<ul>
+<li><p>recommend unanticipated and generous (low or even negative penalty) VDPs</p></li>
+<li><p>when anticipated, VDPs are not incentive compatible since they induce otherwise compliant taxpayers to evade tax</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="crackdowns-and-amnesties" class="slide level3">
+<h3>Crackdowns and Amnesties</h3>
+<ul>
+<li><p>crackdowns may help if culture selects evasion equilibrium (see slides L11)</p></li>
+<li><p>however, problem not solved if tax payers respond by avoiding rather than evading</p></li>
+<li><p>disclosure programs could help, shorter programs are known as <span class="alert">tax amnesty</span></p></li>
+<li><p>Norway: tax amnesty offers no penalties and no criminal sanctions to voluntary disclosers that help correctly assessing tax liability up to ten years back in time</p></li>
+<li><p>information exchange agreements with a large number of tax havens, to reduce offshore tax evasion in 2008</p></li>
+<li><p>1,500 taxpayers disclosed previously unreported foreign assets and income over the period 2008–2016</p></li>
+<li><p>evasion went down; did avoidance increase?</p></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="norwegian-tax-amnesty-context-and-design" class="slide level3">
+<h3>Norwegian Tax Amnesty: Context and Design</h3>
+<h4 id="alstadsaeter-et-al.-2022-jpube">Alstadsaeter et al.&nbsp;(2022, JPubE)</h4>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Micro Data</a></li><li><a href="#tabset-5-2">Design</a></li><li><a href="#tabset-5-3">Expected</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<ul>
+<li><p>tax office data from a wealth tax;</p></li>
+<li><p>matched to comprehensive information about cross-border bank transfers collected by customs authorities</p></li>
+<li><p>for each transfer involving a personal account in a Norwegian bank, observe the transferred amount, the owner of the Norwegian account, and the country of the foreign bank account</p></li>
+<li><p>tax avoidance information: add information from the corporate shareholder register to study the use of holding corporations to avoid taxes, and information from the population register to study migration</p></li>
+</ul>
+</div>
+<div id="tabset-5-2">
+<ul>
+<li><p>dynamic difference-in-difference estimates that express the change in behavior of disclosers over and above the change for nondisclosers with similar ex ante characteristics</p></li>
+<li><p>effect picked up by ‘event time dummies’</p></li>
+<li><p>since evaders disclosing offshore wealth in the beginning of year 0, one can incorporate the disclosed wealth into the tax return for year <span class="math inline">\(-1\)</span></p></li>
+<li><p>year <span class="math inline">\(-2\)</span> is the reference year (last year for which tax return has definitely been submitted at disclosure in year 0)</p></li>
+</ul>
+</div>
+<div id="tabset-5-3">
+<ul>
+<li><p>with perfect substitution between evasion and avoidance, should see no change in tax bases and tax liabilities, but a large increase in the use of avoidance techniques</p></li>
+<li><p>with no substitution, should see substantial increases in tax bases and tax liabilities, but no change in the use of avoidance techniques</p></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="norwegian-tax-amnesty-results" class="slide level3">
+<h3>Norwegian Tax Amnesty: Results</h3>
+<h4 id="alstadsaeter-et-al.-2022-jpube-1">Alstadsaeter et al.&nbsp;(2022, JPubE)</h4>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Tax Base Increase</a></li><li><a href="#tabset-6-2">Tax Avoidance Techniques</a></li><li><a href="#tabset-6-3">Results 1</a></li><li><a href="#tabset-6-4">Results 2</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="center-h">
+<p><img data-src="images/Alstad_EvAv_F3.jpg" style="width:65.0%"></p>
+</div>
+</div>
+<div id="tabset-6-2">
+<div class="center-h">
+<p><img data-src="images/Alstad_EvAv_F4.jpg" style="width:65.0%"></p>
+</div>
+</div>
+<div id="tabset-6-3">
+<ul>
+<li><p>clear evidence against perfect substitution: sharp increase in reported net wealth, income and increase in taxes paid, persistent throughout four years after the amnesty</p></li>
+<li><p>increase in avoidance is small if not zero along those margins</p>
+<ul>
+<li><p>tax shifting of capital income to separate legal entities (holding companies)</p></li>
+<li><p>investing in unlisted shares and real estate (below market value)</p></li>
+<li><p>move tax residence to a foreign country</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-6-4">
+<ul>
+<li><p>amnesty participants gradually repatriated the majority of the offshore assets after disclosure</p></li>
+<li><p>wealth repatriation: dynamics that locks in repatriated wealth post-amnesty at home</p>
+<ul>
+<li><p>over 5 years, repatriators transfer 60% of the disclosed assets to their domestic accounts;</p></li>
+<li><p>75% of the increase in taxable wealth and</p></li>
+<li><p>90% of theincrease in taxable income is domestic (even though not required!)</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="towards-tax-coordination" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="12.4">
+<h2><span class="header-section-number">12.4</span> Towards(?) Tax Coordination</h2>
+
+</section>
+<section id="policy-initiatives-for-tax-coordination" class="slide level3">
+<h3>Policy Initiatives for Tax Coordination</h3>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">G20: BEPS</a></li><li><a href="#tabset-7-2">G20/OECD IF</a></li><li><a href="#tabset-7-3">Critique</a></li><li><a href="#tabset-7-4">Billionaire Tax</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<p>G20: Base Erosion &amp; Profit Shifting policy initiative (BEPS)</p>
+<ul>
+<li><p>MNEs exploit incoherencies, intransparencies, and overt differences in tax systems to have their profits taxed where this is cheapest</p></li>
+<li><p>many economies lose tax revenue due to an eroding tax base</p></li>
+<li><p>BEPS aims to provide common framework for robust international tax standards</p></li>
+</ul>
+</div>
+<div id="tabset-7-2">
+<p>Joint G20/OECD Inclusive Framework (IF)</p>
+<ul>
+<li><p>July 2024: 147 signatories</p></li>
+<li><p>particular focus on digital economy</p></li>
+<li><p>for MNE with global turnover of <span class="math inline">\(&gt;\)</span>20b€ and profitability <span class="math inline">\(&gt;\)</span>10%</p></li>
+<li><p>2 Pillars:</p>
+<ol>
+<li><p>Profit reallocation &amp; nexus rules (apportionment)</p></li>
+<li><p>Minimum corporate tax rate of 15%</p></li>
+</ol></li>
+</ul>
+</div>
+<div id="tabset-7-3">
+<ul>
+<li><p>Devereux and Vella (2014, FS): too much scope for interpretation in BEPS Action Plans, and too much latitude is left with firms and govt’s that pursue their own interests</p></li>
+<li><p>Johannesen (2022, JPubE): game theory model; “the net welfare effect is unambiguously positive when the global minimum rate is so high that profit shifting ends” [otherwise] “the overall welfare effect [may be] negative in non-havens”</p></li>
+<li><p><span>Framant et al, (2021, EU-Tax):</span></p>
+<ul>
+<li><p>IF minimum tax rate of 15% is too low to stop tax competition and tax shopping</p></li>
+<li><p>does not apply to medium-sized MNEs (<span class="math inline">\(\le\)</span>750m € revenue)</p></li>
+<li><p>IF minimum tax rate of 15% is further loosened by so-called carve-outs</p>
+<ul>
+<li><p>MNEs can deduct 5% of value of tangible assets and payroll from tax base</p></li>
+<li><p>22-37% of profits do not fall under the minimum tax</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-7-4">
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>G20 (Brazilian Presidency)/EU Tax Observatory (Zucman)</p>
+<ul>
+<li><p>in NL, billionaires mainly pay taxes indirectly through the corporations they own (<span class="math inline">\(\to\)</span>corporate tax)</p></li>
+<li><p>inclusive of this, effective tax rate for billionaires: ca 17%</p></li>
+<li><p>global billionaire tax: min.&nbsp;2% of wealth</p></li>
+<li><p>3,000 individuals, $200-250b revenue</p></li>
+</ul>
+</div><div class="column" style="font-size: 75%;">
+<p>Effective income tax rates (% of pre-tax income) <img data-src="images/Zucman_billionaire_tax_2025_F2.jpg" style="width:65.0%"></p>
+<p>Proposed minimum tax rates (% of pre-tax income) <img data-src="images/Zucman_billionaire_tax_2025_F7.jpg" style="width:65.0%"></p>
+</div><!-- multicolumn setup .................................................... -->
+</div>
+</div>
+</div>
+</div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="recent-trends-in-special-tax-treatments" class="slide level3">
+<h3>Recent Trends in Special Tax Treatments</h3>
+<!-- multicolumn setup .................................................... -->
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/EUTaxF2.jpg" style="width:80.0%"> <img data-src="images/EUTaxF11.jpg" style="width:80.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/EUTaxF6.jpg" style="width:80.0%"> <img data-src="images/EUTaxF9.jpg" style="width:80.0%"></p>
+</div></div>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="reflection-on-recent-developments" class="slide level3">
+<h3>Reflection on Recent Developments</h3>
+<ul>
+<li><p>international tax competition has intensified along various margins that are not first-order addressed in tax-coordination efforts, and work to narrow the tax base</p>
+<ul>
+<li><p>specific preferential tax regimes for individuals in the personal income tax</p></li>
+<li><p>special regimes and idiosyncratic tax rulings for particular corporate tax payers</p></li>
+<li><p>indirect R&amp;D stimuli (tax breaks rather than overt R&amp; D subsidies)</p></li>
+<li><p>generous patent and IP tax treatment (so-called patent boxes)</p></li>
+</ul></li>
+<li><p>increased danger of secrecy, intransparency, complexity and incoherency</p></li>
+</ul>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="academic-estimates" class="slide level3">
+<h3>Academic Estimates</h3>
+<ul>
+<li><p>Goolsbee (2000, JPE): short-run elasticity of taxable income with respect to the net-of-tax share of U.S. corporate executives <span class="math inline">\(&gt;1\)</span>, but long-run elasticities <span class="math inline">\(\to 0\)</span>. Points to shifts in the <span class="alert">timing</span> of compensation responding to tax incentives.</p></li>
+<li><p>Kleven et al (2013, QJE): clear reduced-form effects of reduction of wealth taxes for the rich in DK in the short and medium run, larger effects on the very wealthy than on the moderately wealthy. Long-run elasticity of taxable wealth with respect to the net-of-tax return is sizable at the top of the distribution.</p></li>
+<li><p>Kleven et al (2013, AER): study effects of top tax rates on international migration of football players in 14 European countries, after 1985. Elasticity of the number of foreign players to the net-of-tax rate <span class="math inline">\(\approx 1\)</span> (domestic players: <span class="math inline">\(\to 0\)</span>)</p></li>
+<li><p>Akcigit at al (2016, AER): using patent holder data from the USPO and EPO, find that elasticity to the net-of-tax rate of the number of foreign superstar inventors <span class="math inline">\(\approx 1\)</span> (domestic inventors <span class="math inline">\(\to 0\)</span>).</p></li>
+</ul>
+<!-- ** NEW SUBSECTION ********************************************************* -->
+</section>
+
+<section id="conclusions" class="title-slide slide level2 center" data-background-color="#acfaf7" data-number="12.5">
+<h2><span class="header-section-number">12.5</span> Conclusions</h2>
+<!-- ** NEW SLIDE ********************************************************* -->
+</section>
+<section id="summary" class="slide level3">
+<h3>Summary</h3>
+<ul>
+<li><p>businesses and rich individuals shop for lowest rates and use tax avoidance strategies</p></li>
+<li><p>encouraged by jurisdictions competing for revenue, race to the bottom (maybe not to zero)</p></li>
+<li><p>super-rich individuals respond clearly to tax rates, shifting taxable incomes and assets abroad</p></li>
+<li><p>in case of evasion, gov’t can try to get them back with amnesty programs, attempting to repatriate the tax base</p></li>
+<li><p>may work if amnesty is incidental but comprehensive (a shock that moves, rather than a system that tax players learn to game)</p></li>
+<li><p>int’l tax harmonization is a missing global public good</p></li>
+<li><p>present system not fit for a highly integrated, digitized, and mobile world</p></li>
+<li><p>first int’l coordination efforts take long to materialize and are possibly half-hearted</p></li>
+</ul>
+
+
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
+</section>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/VUnobg.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>BSc Course • Public Economics • © 2025-26 Stefan Hochguertel</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 5.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // default icon
+                link.classList.add("external");
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
+    
+
+</body></html>
